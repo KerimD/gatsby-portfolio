@@ -39,16 +39,19 @@
 }
 
 .main-content {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .temp-about {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   background: red;
-  height: 367px; // 132px
+  height: 367px;
   width: 462px;
-  // padding-top: calc(100% - 8.25rem);
   margin-left: 4.375rem;
 }
