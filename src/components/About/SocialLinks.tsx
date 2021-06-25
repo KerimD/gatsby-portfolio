@@ -28,13 +28,18 @@ const SocialLinks = () => {
     <div className="social-links">
       {SOCIALS.map((social) =>
         <div className="social-links-wrapper">
-          <div className="link-text">{social.text}</div>
+          <div className="hover-link">
+            <p>{social.text}</p>
+            <a href={social.href}>
+              <img src={social.iconSrc} alt="" height="20" />
+            </a>
+          </div>
           <a href={social.href}>
             <img src={social.iconSrc} alt="" height="20" />
           </a>
         </div>
       )}
-    </div >
+    </div>
   );
 };
 

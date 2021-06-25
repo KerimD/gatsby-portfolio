@@ -1,15 +1,75 @@
 .about {
-  min-height: 30rem;
-  max-height: 50rem;
+  position: relative;
+  min-height: 50rem;
+  max-height: 60rem;
   height: 100vh;
+  display: flex;
+  // background: green;
+}
 
-  h1 {
+.about-content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  & > h1 {
+    position: absolute;
+    top: -13rem;
+    left: -0.625rem;
+    width: 11ch;
     font-size: 10rem;
-    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: Roboto-Bold;
     color: #7067df;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 
-  p {
+  & > p {
     font-size: 2rem;
+    letter-spacing: 0.045em;
   }
+}
+
+.bg-text {
+  position: absolute;
+  font-size: 5.5rem;
+  letter-spacing: 0.025em;
+  color: rgba(112, 103, 223, 0.2);
+  font-family: Roboto-Bold;
+}
+
+.student {
+  right: 7rem;
+  bottom: 20rem;
+}
+
+.designer {
+  right: 28rem;
+  bottom: 13rem;
+}
+
+.mentor {
+  right: 2rem;
+  bottom: 10rem;
+}
+
+.developer {
+  right: 46rem;
+  bottom: 5rem;
+}
+
+.engineer {
+  right: 13rem;
+  bottom: 1rem;
 }
