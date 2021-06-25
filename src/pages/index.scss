@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.home-page {
+  max-width: 82.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.temp-nav-bar {
+  margin-top: 2.5rem;
+  background: black;
+  height: 3.875rem;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import '../styles/social-links.scss';
-import linkedin from '../images/icons/linkedin.svg';
-import github from '../images/icons/github.svg';
-import email from '../images/icons/email.svg';
+import './social-links.scss';
+import linkedin from '../../images/icons/linkedin.svg';
+import github from '../../images/icons/github.svg';
+import email from '../../images/icons/email.svg';
 
 const SOCIALS = [
   {
@@ -25,7 +25,7 @@ const SOCIALS = [
 
 const SocialLinks = () => {
   return (
-    <div className="social-links-container">
+    <div className="social-links">
       {SOCIALS.map((social) =>
         <div className="social-links-wrapper">
           <div className="link-text">{social.text}</div>

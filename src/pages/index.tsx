@@ -1,21 +1,18 @@
 import React from "react";
 
+import About from "../components/About";
 import SocialLinks from "../components/SocialLinks";
+// import Projects from "../components/Projects";
 
-import '../styles/index.scss';
+import './index.scss';
 
 const HomePage = () => {
   return (
-    <div className="home-page-container">
-      <div className="home-page">
-        <div className="temp-background-picture" />
-        <div className="temp-nav-bar" />
-        <div className="main-content">
-          <div className="temp-about" />
-          <SocialLinks />
-        </div>
-        {/* <Projects /> */}
-      </div>
+    <div className="home-page">
+      <div className="temp-nav-bar" />
+      <SocialLinks />
+      <About />
+      {/* <Projects /> */}
     </div>
   );
 }
