@@ -31,11 +31,11 @@ const SocialLinks = () => {
           <div className="hover-link">
             <p>{social.text}</p>
             <a href={social.href}>
-              <img src={social.iconSrc} alt="" height="20" />
+              <img src={social.iconSrc} alt="" height="24" />
             </a>
           </div>
           <a href={social.href}>
-            <img src={social.iconSrc} alt="" height="20" />
+            <img src={social.iconSrc} alt="" height="24" />
           </a>
         </div>
       )}

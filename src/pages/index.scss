@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
   font-family: 'Roboto-Bold';
   src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
@@ -12,6 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: Roboto;
+  // outline: 3px solid black;
 }
 
 .home-page {
@@ -20,15 +26,4 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-
-.temp-nav-bar {
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3.75rem;
-  margin-top: 2.5rem;
-  background: black;
 }

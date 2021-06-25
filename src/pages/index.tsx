@@ -1,5 +1,6 @@
 import React from "react";
 
+import Nav from "../components/Nav";
 import About from "../components/About";
 import Projects from "../components/Projects";
 
@@ -8,7 +9,7 @@ import './index.scss';
 const HomePage = () => {
   return (
     <div className="home-page">
-      <div className="temp-nav-bar" />
+      <Nav />
       <About />
       <Projects />
     </div>
