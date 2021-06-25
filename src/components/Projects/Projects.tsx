@@ -18,9 +18,9 @@ const PROJECTS = [
 const Projects = () => {
   return (
     <div className="projects">
-    {PROJECTS.map((project) =>
-      <Project key={project.name} />
-    )}
+      {PROJECTS.map((project) =>
+        <Project key={project.name} />
+      )}
     </div>
   );
 };

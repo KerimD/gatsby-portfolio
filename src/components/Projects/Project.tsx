@@ -5,7 +5,6 @@ import './project.scss';
 const Project = () => {
   return (
     <div className="project">
-      <div className="middle-line" />
     </div>
   );
 };
