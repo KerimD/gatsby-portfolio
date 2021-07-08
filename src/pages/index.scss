@@ -13,6 +13,10 @@
   src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 
+:root {
+  --accent: #7067df;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
