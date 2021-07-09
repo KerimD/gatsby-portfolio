@@ -14,19 +14,23 @@
 }
 
 :root {
-  --accent: #7067df;
+  --accent: #541c8c;
+  --secondary: #ffd700;
+  --medium: Roboto-Medium;
+  --bold: Roboto-Bold;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: Roboto;
   // outline: 3px solid black;
 }
 
 .home-page {
   position: relative;
-  max-width: 82.5rem;
+  // max-width: 82.5rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
