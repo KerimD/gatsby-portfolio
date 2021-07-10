@@ -1,31 +1,21 @@
+.nav-wrapper {
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+}
+
 .nav {
-  z-index: 9;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   max-width: 82.5rem;
   height: 3.75rem;
   margin-top: 2.5rem;
   display: flex;
-}
-
-.view-resume-btn {
-  height: auto;
-  padding: 0 2rem;
-  border: 0;
-  border-radius: 9999px;
-  font-family: var(--medium);
-  letter-spacing: 0.1em;
-  font-size: 18px;
-  cursor: pointer;
-  margin-left: 4.375rem;
-  margin-right: 0.625rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4rem;
 }
 
 .nav-link-list {
-  margin-right: auto;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -35,14 +25,34 @@
     text-decoration: none;
     letter-spacing: 0.1em;
     color: white;
-    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 0.625rem;
+  }
+
+  & a:hover {
+    text-decoration: underline;
   }
 }
 
-.corner-svg-wrapper {
-  margin: 22px 23px 0 0;
+.cool-corner-thing {
+  position: relative;
+  margin-right: 23px;
   width: 24px;
   height: 16px;
-  background: white;
+
+  & > div {
+    position: absolute;
+    background: white;
+    border-radius: 999px;
+  }
+
+  .top {
+    inset: 0 0 auto 0;
+    height: 3px;
+  }
+
+  .right {
+    inset: 0 0 0 auto;
+    width: 3px;
+  }
 }

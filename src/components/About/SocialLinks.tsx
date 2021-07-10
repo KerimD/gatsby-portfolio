@@ -1,10 +1,9 @@
 import React from 'react';
 
 import './social-links.scss';
-import Linkedin from '../../images/icons/linkedin.svg';
-import Github from '../../images/icons/github.svg';
-import Email from '../../images/icons/email.svg';
-import Phone from '../../images/icons/phone.svg';
+import linkedin from '../../assets/images/svg/linkedin.svg';
+import github from '../../assets/images/svg/github.svg';
+import phone from '../../assets/images/svg/phone.svg';
 
 type Social = {
   text: string;
@@ -16,21 +15,16 @@ const SOCIALS: Social[] = [
   {
     text: 'linkedin.com',
     href: 'https://www.linkedin.com/',
-    icon: Linkedin,
+    icon: linkedin,
   },
   {
     text: 'github.com',
     href: 'https://github.com/',
-    icon: Github,
-  },
-  {
-    text: 'email@google.com',
-    href: 'mailto:email@google.com',
-    icon: Email,
+    icon: github,
   },
   {
     text: '(636) 253-9503',
-    icon: Phone,
+    icon: phone,
   }
 ];
 
@@ -38,20 +32,18 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       {SOCIALS.map((social) =>
-        <div className="social-links-wrapper">
+        <div key={social.text} className="social-link-wrapper">
+          <social.icon fill="white" alt="" height="24" />
           <div className="hover-link">
             <p>{social.text}</p>
             {social.href
               ? <a href={social.href}>
                   <social.icon alt="" height="24" />
                 </a>
-              : <social.icon alt="" height="24" />}
+              : <div>
+                  <social.icon alt="" height="24" />
+                </div>}
           </div>
-          {social.href
-            ? <a href={social.href}>
-                <social.icon fill="white" alt="" height="24" />
-              </a>
-            : <social.icon fill="white" alt="" height="24" />}
         </div>
       )}
     </div>
