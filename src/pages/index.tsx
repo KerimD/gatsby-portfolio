@@ -1,7 +1,7 @@
 import React from "react";
 
 import Nav from "../components/Nav";
-import About from "../components/About";
+import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 
 import './index.scss';
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <Nav />
-      <About />
+      <Hero />
       <Projects />
     </div>
   );

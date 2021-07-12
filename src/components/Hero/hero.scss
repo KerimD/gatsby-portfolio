@@ -1,10 +1,10 @@
-.about-wrapper {
+.hero-wrapper {
   background: var(--accent);
   display: flex;
   justify-content: center;
 }
 
-.about {
+.hero {
   position: relative;
   min-height: 45rem;
   max-height: 65rem;
@@ -20,7 +20,7 @@
   }
 }
 
-.about-content {
+.hero-content {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,23 +28,22 @@
   z-index: 9;
 }
 
-.about-info {
+.hero-info {
   & > h1 {
-    width: 10.5ch;
     font-size: 8rem;
     letter-spacing: 0.04em;
-    font-family: var(--bold);
+    font-family: var(--crazy-font);
     margin-block-start: 0;
     margin-block-end: 0;
     line-height: 0.9;
-    margin-bottom: 1.3rem;
+    margin-bottom: 2rem;
   }
 
   & > p {
-    font-size: 1.7rem;
     letter-spacing: 0.045em;
     margin-left: 0.375rem;
     margin-bottom: 2rem;
+    width: 63ch;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -54,31 +53,47 @@
     }
 
     & > p {
-      font-size: 2rem;
+      font-size: 1.2rem;
       letter-spacing: 0.045em;
+      width: 60ch;
     }
   }
 }
 
-.view-resume-btn {
-  padding: 1.2rem 1.8rem;
-  border: 0;
-  border-radius: 9999px;
-  cursor: pointer;
-  margin-left: 0.375rem;
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
+// .view-resume-btn {
+//   padding: 0.9rem 2rem;
+//   background: transparent;
+//   border: 2px solid white;
+//   color: white;
+//   border-radius: 0.7rem;
+//   cursor: pointer;
+//   margin-left: 0.375rem;
+//   display: flex;
+//   gap: 0.6rem;
+//   align-items: center;
+//   transition: background 200ms, color 200ms;
 
-  & > div {
-    font-family: var(--medium);
-    font-size: 18px;
-  }
+//   & > div {
+//     font-family: var(--medium);
+//     font-size: 18px;
+//   }
 
-  &:hover {
-    background: lightgray;
-  }
-}
+//   & > svg {
+//     fill: white;
+//     transition: fill 200ms;
+//   }
+
+//   &:hover {
+//     background: white;
+//     color: black;
+//     transition: background 200ms, color 200ms;
+//   }
+
+//   &:hover > svg {
+//     fill: black;
+//     transition: fill 200ms;
+//   }
+// }
 
 .bg-text {
   position: absolute;

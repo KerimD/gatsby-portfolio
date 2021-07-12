@@ -13,11 +13,17 @@
   src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url('../assets/fonts/pacifico/Pacifico-Regular.ttf');
+}
+
 :root {
   --accent: #541c8c;
   --secondary: #ffd700;
   --medium: Roboto-Medium;
   --bold: Roboto-Bold;
+  --crazy-font: Pacifico-Regular;
 }
 
 * {
