@@ -3,24 +3,17 @@ import React from 'react';
 import Project from './Project';
 
 import './projects.scss';
-
-const PROJECTS = [
-  { name: "a" },
-  { name: "b" },
-  { name: "c" },
-  { name: "d" },
-  { name: "e" },
-  { name: "f" },
-  { name: "g" },
-  { name: "h" }
-];
+import { projects } from './data/Projects';
 
 const Projects = () => {
   return (
     <div className="projects">
-      {PROJECTS.map((project) =>
-        <Project key={project.name} />
-      )}
+      <h2>Projects</h2>
+      <div className="projects">
+        {projects.map((project) =>
+          <Project key={project.name} />
+        )}
+      </div>
     </div>
   );
 };

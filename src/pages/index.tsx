@@ -9,9 +9,15 @@ import './index.scss';
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Nav />
-      <Hero />
-      <Projects />
+      <header>
+        <Nav />
+        <Hero />
+      </header>
+      <div id="body">
+        {/* <Experience /> */}
+        <Projects />
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }

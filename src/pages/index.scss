@@ -36,8 +36,28 @@
 
 .home-page {
   position: relative;
-  // max-width: 82.5rem;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: stretch;
+}
+
+header {
+  background: var(--accent);
+  padding-left: 4rem;
+  min-height: 45rem;
+  max-height: 65rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 1200px) {
+    height: 80vh;
+  }
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
