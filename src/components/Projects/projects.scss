@@ -3,4 +3,11 @@
   max-width: 82.5rem;
   display: flex;
   flex-direction: column;
+
+  & > h2 {
+    font-size: 4rem;
+    font-family: var(--bold);
+    color: var(--accent);
+    margin: 4rem 0 5rem;
+  }
 }
