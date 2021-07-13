@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Project from './Project';
+import ExperienceItem from './ExperienceItem';
 
-import './projects.scss';
+import './experience.scss';
 
-const PROJECTS: TypesN.ProjectData[] = [
+const EXPERIENCE_ITEMS: TypesN.ProjectData[] = [
   {
     name: 'Discord Draft Bot',
     date: 'May 2020',
@@ -28,15 +28,15 @@ const PROJECTS: TypesN.ProjectData[] = [
   },
 ];
 
-const Projects = () => {
+const Experiences = () => {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <div className="projects">
-        {PROJECTS.map((project) =>
-          <Project
-            key={project.name}
-            project={project}
+    <section id="experience">
+      <h2>Experience</h2>
+      <div className="experience">
+        {EXPERIENCE_ITEMS.map((experienceItem) =>
+          <ExperienceItem
+            key={experienceItem.name}
+            experienceItem={experienceItem}
           />
         )}
       </div>
@@ -44,4 +44,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experiences;

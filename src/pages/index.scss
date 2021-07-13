@@ -19,8 +19,11 @@
 }
 
 :root {
-  --accent: #541c8c;
+  --accent: #605bcb;
+  // --accent: #2e26d8;
+  // --accent: #541c8c;
   --secondary: #ffd700;
+  --dark: #07070f;
   --medium: Roboto-Medium;
   --bold: Roboto-Bold;
   --crazy-font: Pacifico-Regular;
@@ -32,6 +35,11 @@
   padding: 0;
   font-family: Roboto;
   // outline: 3px solid black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
 }
 
 .home-page {
@@ -53,8 +61,16 @@ header {
 }
 
 #body {
-  padding-left: 4.375rem;
+  padding: 5rem 0 5rem 4.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & > section {
+    margin-bottom: 5rem;
+  }
+
+  & > section:last-child {
+    margin-bottom: 0;
+  }
 }
