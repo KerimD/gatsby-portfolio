@@ -20,13 +20,25 @@
 
 :root {
   --accent: #605bcb;
-  // --accent: #2e26d8;
-  // --accent: #541c8c;
   --secondary: #ffd700;
   --dark: #07070f;
   --medium: Roboto-Medium;
   --bold: Roboto-Bold;
   --crazy-font: Pacifico-Regular;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 999px;
+  border: 3px solid white;
 }
 
 * {
@@ -42,6 +54,57 @@ html {
   scroll-padding-top: 3rem;
 }
 
+header {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 86.875rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4.375rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section > h2 {
+  font-size: 4rem;
+  font-family: var(--bold);
+  color: var(--accent);
+  margin-bottom: 3rem;
+
+  &::after {
+    content: ' /';
+  }
+}
+
+section > .section-content {
+  padding-left: 4.375rem;
+
+  & div {
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > * {
+      margin-bottom: 0.3rem;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .home-page {
   position: relative;
   display: flex;
@@ -49,28 +112,9 @@ html {
   align-items: stretch;
 }
 
-header {
-  background: var(--accent);
-  padding-left: 4rem;
-  min-height: 45rem;
-  max-height: 65rem;
-  height: 82vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #body {
-  padding: 5rem 0 5rem 4.375rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  & > section {
-    margin-bottom: 5rem;
-  }
-
-  & > section:last-child {
-    margin-bottom: 0;
-  }
 }

@@ -2,9 +2,9 @@
   width: 100%;
   max-width: 82.5rem;
   height: 3.75rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,35 +24,13 @@
   & a {
     text-decoration: none;
     letter-spacing: 0.04em;
-    color: white;
+    color: var(--dark);
     padding: 0.625rem;
     font-size: 18px;
+    font-family: var(--medium);
   }
 
   & a:hover {
     text-decoration: underline;
-  }
-}
-
-.cool-corner-thing {
-  position: relative;
-  margin-right: 23px;
-  width: 24px;
-  height: 16px;
-
-  & > div {
-    position: absolute;
-    background: white;
-    border-radius: 999px;
-  }
-
-  .top {
-    inset: 0 0 auto 0;
-    height: 3px;
-  }
-
-  .right {
-    inset: 0 0 0 auto;
-    width: 3px;
   }
 }
