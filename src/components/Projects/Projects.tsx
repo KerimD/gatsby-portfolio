@@ -4,7 +4,7 @@ import Project from './Project';
 
 import './projects.scss';
 
-const PROJECTS: TypesN.ProjectData[] = [
+const PROJECTS: TypesN.ProjectItem[] = [
   {
     name: 'Discord Draft Bot',
     date: 'May 2020',

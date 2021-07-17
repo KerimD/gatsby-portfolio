@@ -51,7 +51,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3rem;
 }
 
 header {
@@ -88,7 +87,7 @@ section > h2 {
 section > .section-content {
   padding-left: 4.375rem;
 
-  & div {
+  div {
     margin-bottom: 3rem;
 
     &:last-child {
@@ -102,6 +101,11 @@ section > .section-content {
     & > *:last-child {
       margin-bottom: 0;
     }
+  }
+
+  span {
+    color: var(--accent);
+    font-family: var(--medium);
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './project.scss';
 
-const Project = ({ project }: { project: TypesN.ProjectData }) => {
+const Project = ({ project }: { project: TypesN.ProjectItem }) => {
   return (
     <div className="project">
       <h3>{project.name}</h3>

@@ -2,12 +2,14 @@ import React from 'react';
 
 import './experience_item.scss';
 
-const ExperienceItem = ({ experienceItem }: { experienceItem: TypesN.ProjectData }) => {
+const ExperienceItem = ({ experienceItem }: { experienceItem: TypesN.ExperienceItem }) => {
   return (
     <div className="experience-item">
-      <h3>{experienceItem.name}</h3>
+      <h3>{experienceItem.title}{' @ '}{experienceItem.company}</h3>
       <div>{experienceItem.date}</div>
-      {experienceItem.description}
+      <ul>
+        {experienceItem.bulletPoints.map((bp) => <li>{bp}</li>)}
+      </ul>
     </div>
   );
 };

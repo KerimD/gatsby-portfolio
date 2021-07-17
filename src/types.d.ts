@@ -4,7 +4,13 @@ declare module "*.svg" {
 }
 
 declare namespace TypesN {
-  type ProjectData = {
+  type ExperienceItem = {
+    title: string;
+    company: string;
+    date: string;
+    bulletPoints: JSX.Element[];
+  }
+  type ProjectItem = {
     name: string;
     date: string;
     description: JSX.Element;

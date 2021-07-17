@@ -4,27 +4,77 @@ import ExperienceItem from './ExperienceItem';
 
 import './experience.scss';
 
-const EXPERIENCE_ITEMS: TypesN.ProjectData[] = [
+const EXPERIENCE_ITEMS: TypesN.ExperienceItem[] = [
   {
-    name: 'Discord Draft Bot',
-    date: 'May 2020',
-    description:
+    title: 'Full Stack Software Engineer',
+    company: 'Hiperion',
+    date: 'June - July 2021',
+    bulletPoints: [
       <p>
-        Devised a solution to organize 1,000s of competitive
-        matches for pro players by working with discord’s API
-        to create a <span>Python</span> bot.
+        Developed an internal page used to monitor over 6,000
+        unique jobs per month utilizing <span>Java</span>,
+        <span> Cassandra</span>, and <span>GWT</span>.
       </p>,
+      <p>
+        Migrated legacy operations to our full stack applications.
+      </p>,
+      <p>
+        Launched new RESTful services for existing
+        <span> Spring Boot</span> microservices.
+      </p>,
+      <p>
+        Attended scrum, retrospective, and sprint planning
+        meetings (<span>Agile</span>).
+      </p>,
+    ]
   },
   {
-    name: 'BDO Calculator',
-    date: 'Oct - Dec 2019',
-    description: 
+    title: 'Full Stack Software Engineer',
+    company: 'NISC',
+    date: 'May - Aug 2020',
+    bulletPoints: [
       <p>
-        A statistic calculator that predicts optimal usage of
-        in game currency. The website is built using
-        <span>TypeScript</span> with a <span>React.js</span>
-        frontend and a <span>Koa.js</span> REST API.
+        Developed an internal page used to monitor over 6,000
+        unique jobs per month utilizing <span>Java</span>,
+        <span> Cassandra</span>, and <span>GWT</span>.
       </p>,
+      <p>
+        Migrated legacy operations to our full stack applications.
+      </p>,
+      <p>
+        Launched new RESTful services for existing
+        <span> Spring Boot</span> microservices.
+      </p>,
+      <p>
+        Attended scrum, retrospective, and sprint planning
+        meetings (<span>Agile</span>).
+      </p>,
+    ]
+  },
+  {
+    title: 'Chair',
+    company: 'ACM Web',
+    date: 'Oct 2019 - Today',
+    bulletPoints: [
+      <p>
+        Conduct scrum meetings, assign issues, and review pull
+        requests to prepare students for a career in cs.
+      </p>,
+      <p>
+        Organize events to recruit new students and increase
+        involvement for current members.
+      </p>,
+      <p>
+        Overhauled our <span>Stripe</span> payment form in
+        <span> React.js</span> with a fresh look using
+        <span> Figma</span>.
+      </p>,
+      <p>
+        Developing our new profile page using
+        <span>Typescript</span> with <span>React.js</span>,
+        <span> GraphQL</span>, and <span>TypeORM</span>.
+      </p>,
+    ]
   },
 ];
 
@@ -35,7 +85,7 @@ const Experiences = () => {
       <div className="section-content">
           {EXPERIENCE_ITEMS.map((experienceItem) =>
             <ExperienceItem
-              key={experienceItem.name}
+              key={experienceItem.title}
               experienceItem={experienceItem}
             />
           )}
