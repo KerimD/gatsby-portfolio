@@ -22,9 +22,4 @@ declare namespace TypesN {
     date: string;
     description: JSX.Element;
   }
-
-  type Contact = {
-    name: string;
-    href?: string;
-  }
 }

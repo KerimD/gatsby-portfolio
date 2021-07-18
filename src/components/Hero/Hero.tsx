@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SocialLinks from "./SocialLinks";
+import HeroLinks from "./HeroLinks";
 
 import './hero.scss';
 
@@ -16,7 +16,7 @@ const Hero = () => {
               position as a software engineer.
           </p>
         </div>
-        <SocialLinks />
+        <HeroLinks />
       </div >
       <div className="bg-text student">Student</div>
       <div className="bg-text designer">Designer</div>

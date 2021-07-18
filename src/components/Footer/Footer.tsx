@@ -1,30 +1,7 @@
 import React from 'react';
 
 import './footer.scss';
-
-const SOCIALS: TypesN.Social[] = [
-  {
-    name: 'linkedin.com/in/deniz-kerim',
-    href: 'https://www.linkedin.com/in/deniz-kerim/',
-  },
-  {
-    name: 'github.com/KerimD',
-    href: 'https://github.com/KerimD',
-  },
-];
-
-const CONTACTS: TypesN.Contact[] = [
-  {
-    name: '(636) 253-9503',
-  },
-  {
-    name: 'denizkerim@yahoo.com',
-    href: 'mailto:denizkerim@yahoo.com',
-  },
-  {
-    name: 'Fried Rice#9566 <- on discord!',
-  },
-];
+import { SOCIALS, CONTACTS } from '../../assets/data';
 
 const Hero = () => {
   return (
