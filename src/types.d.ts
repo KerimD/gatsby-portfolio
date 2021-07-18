@@ -7,7 +7,7 @@ declare namespace TypesN {
   type Social = {
     name: string;
     href?: string;
-    icon?: any;
+    icon: any;
   }
 
   type ExperienceItem = {

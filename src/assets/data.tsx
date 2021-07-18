@@ -3,6 +3,8 @@ import React from 'react';
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
 import phone from './images/svg/phone.svg';
+import email from './images/svg/email.svg';
+import discord from './images/svg/discord.svg';
 
 export const SOCIALS: TypesN.Social[] = [
   {
@@ -25,9 +27,11 @@ export const CONTACTS: TypesN.Social[] = [
   {
     name: 'denizkerim@yahoo.com',
     href: 'mailto:denizkerim@yahoo.com',
+    icon: email,
   },
   {
     name: 'Fried Rice#9566 <- on discord!',
+    icon: discord,
   },
 ];
 
