@@ -55,7 +55,7 @@
 
 .bg-text {
   position: absolute;
-  font-size: 4rem;
+  font-size: 4.3rem;
   letter-spacing: 0.04em;
   opacity: 0.03;
   font-family: var(--medium);
@@ -70,8 +70,8 @@
 }
 
 .student {
-  right: 8rem;
-  bottom: 13rem;
+  right: 7rem;
+  bottom: 15rem;
 
   @media only screen and (min-width: 1200px) {
     right: 10rem;
@@ -100,7 +100,7 @@
 }
 
 .developer {
-  right: 42rem;
+  right: 38rem;
   bottom: 2rem;
 
   @media only screen and (min-width: 1200px) {
