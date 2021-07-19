@@ -26,12 +26,11 @@
     letter-spacing: 0.04em;
     color: var(--dark);
     padding: 0.625rem;
-    font-size: 18px;
+    font-size: 1.25rem;
     font-family: var(--medium);
   }
 
   & a:hover {
-    background: #605bcb33;
-    border-radius: 0.3rem;
+    text-decoration: underline;
   }
 }

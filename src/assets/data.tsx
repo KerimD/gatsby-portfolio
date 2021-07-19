@@ -1,10 +1,17 @@
 import React from 'react';
 
+// svg
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
 import phone from './images/svg/phone.svg';
 import email from './images/svg/email.svg';
 import discord from './images/svg/discord.svg';
+
+// img
+import portfolio from './images/portfolio.png';
+import acmWeb from './images/acm-web.png';
+import discordBot from './images/discord-bot.png';
+import bdoCalc from './images/bdo.png';
 
 export const SOCIALS: TypesN.Social[] = [
   {
@@ -29,22 +36,34 @@ export const CONTACTS: TypesN.Social[] = [
     href: 'mailto:denizkerim@yahoo.com',
     icon: email,
   },
-  {
-    name: 'Fried Rice#9566 <- on discord!',
-    icon: discord,
-  },
+  // {
+  //   name: 'Fried Rice#9566 <- on discord!',
+  //   icon: discord,
+  // },
 ];
 
 export const HERO_LINKS: TypesN.Social[] = [
   ...SOCIALS,
   CONTACTS[0],
-]
+];
 
 export const PROJECTS: TypesN.Project[] = [
+  {
+    name: 'My Portfolio',
+    title: 'Developer',
+    date: 'July 2021 - Today',
+    imageSrc: portfolio,
+    description:
+      <p>
+        A beautiful, modern portfolio to display my skills and
+        experiences.
+      </p>,
+  },
   {
     name: 'ACM Web',
     title: 'Chair',
     date: 'Oct 2019 - Today',
+    imageSrc: acmWeb,
     description:
       <p>
         Conduct scrum meetings, assign issues, and review pull
@@ -55,9 +74,10 @@ export const PROJECTS: TypesN.Project[] = [
     name: 'Discord Battlerite Draft Bot',
     title: 'Developer',
     date: 'May 2020',
+    imageSrc: discordBot,
     description:
       <p>
-        Devised a solution to organize 1,000s of competitive
+        Devised a solution that organized 1,000s of competitive
         matches for pro players by working with discord’s API
         to create a <span>Python</span> bot.
       </p>,
@@ -66,6 +86,7 @@ export const PROJECTS: TypesN.Project[] = [
     name: 'BDO Enhancing Calculator',
     title: 'Developer',
     date: 'Oct - Dec 2019',
+    imageSrc: bdoCalc,
     description:
       <p>
         A statistic calculator that predicts optimal usage of

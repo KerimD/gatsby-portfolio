@@ -1,5 +1,5 @@
 footer {
-  padding: 2rem 2rem 1rem;
+  padding: 2rem;
   background: black;
   color: var(--light-gray);
   font-size: 0.875rem;
@@ -7,6 +7,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: radial-gradient(rgb(37, 37, 37) 1px, transparent 0);
+  background-size: 30px 30px;
 }
 
 .footer-content-container {
@@ -17,7 +19,7 @@ footer {
   @media only screen and (min-width: 500px) {
     gap: 0;
     width: 100%;
-    max-width: 60rem;
+    max-width: 100rem;
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -50,6 +52,6 @@ footer {
 }
 
 .copywrite {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 12px;
 }

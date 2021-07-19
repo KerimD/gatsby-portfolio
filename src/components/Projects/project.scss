@@ -1,0 +1,25 @@
+.project {
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & > * {
+    margin-bottom: 0.3rem;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  & > span {
+    color: var(--accent);
+    font-family: var(--medium);
+  }
+
+  & > img {
+    width: 500px;
+    border-radius: 0.8rem;
+  }
+}
