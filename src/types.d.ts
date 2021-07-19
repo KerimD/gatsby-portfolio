@@ -10,15 +10,9 @@ declare namespace TypesN {
     icon: any;
   }
 
-  type ExperienceItem = {
-    title: string;
-    company: string;
-    date: string;
-    bulletPoints: JSX.Element[];
-  }
-  
-  type ProjectItem = {
+  type Project = {
     name: string;
+    title: string;
     date: string;
     description: JSX.Element;
   }
