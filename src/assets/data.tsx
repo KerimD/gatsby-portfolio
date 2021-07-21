@@ -5,7 +5,6 @@ import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
 import phone from './images/svg/phone.svg';
 import email from './images/svg/email.svg';
-import discord from './images/svg/discord.svg';
 
 // img
 import portfolio from './images/portfolio.png';
@@ -36,10 +35,6 @@ export const CONTACTS: TypesN.Social[] = [
     href: 'mailto:denizkerim@yahoo.com',
     icon: email,
   },
-  // {
-  //   name: 'Fried Rice#9566 <- on discord!',
-  //   icon: discord,
-  // },
 ];
 
 export const HERO_LINKS: TypesN.Social[] = [
@@ -50,13 +45,14 @@ export const HERO_LINKS: TypesN.Social[] = [
 export const PROJECTS: TypesN.Project[] = [
   {
     name: 'My Portfolio',
-    title: 'Developer',
+    title: 'Solo Developer',
     date: 'July 2021 - Today',
     imageSrc: portfolio,
+    github: 'https://github.com/KerimD/gatsby-portfolio',
+    liveSite: '',
     description:
       <p>
-        A beautiful, modern portfolio to display my skills and
-        experiences.
+        A beautiful portfolio to display my skills.
       </p>,
   },
   {
@@ -64,6 +60,8 @@ export const PROJECTS: TypesN.Project[] = [
     title: 'Chair',
     date: 'Oct 2019 - Today',
     imageSrc: acmWeb,
+    github: 'https://github.com/sigdotcom/mstacm.org',
+    liveSite: 'https://mstacm.org/',
     description:
       <p>
         Conduct scrum meetings, assign issues, and review pull
@@ -72,9 +70,11 @@ export const PROJECTS: TypesN.Project[] = [
   },
   {
     name: 'Discord Battlerite Draft Bot',
-    title: 'Developer',
+    title: 'Solo Developer',
     date: 'May 2020',
     imageSrc: discordBot,
+    github: 'https://github.com/KerimD/draft_bot',
+    liveSite: 'https://github.com/KerimD/draft_bot',
     description:
       <p>
         Devised a solution that organized 1,000s of competitive
@@ -84,14 +84,16 @@ export const PROJECTS: TypesN.Project[] = [
   },
   {
     name: 'BDO Enhancing Calculator',
-    title: 'Developer',
+    title: 'Solo Developer',
     date: 'Oct - Dec 2019',
     imageSrc: bdoCalc,
+    github: 'https://github.com/KerimD/bdo-app',
+    liveSite: 'https://github.com/KerimD/bdo-app',
     description:
       <p>
         A statistic calculator that predicts optimal usage of
         in game currency. The website is built using
-        <span>TypeScript</span> with a <span>React.js</span>
+        <span> TypeScript</span> with a <span>React.js </span>
         frontend and a <span>Koa.js</span> REST API.
       </p>,
   },

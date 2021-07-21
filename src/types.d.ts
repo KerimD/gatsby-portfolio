@@ -20,6 +20,8 @@ declare namespace TypesN {
     title: string;
     date: string;
     imageSrc: string;
+    github: string;
+    liveSite: string;
     description: JSX.Element;
   }
 }
