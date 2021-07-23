@@ -98,3 +98,20 @@ export const PROJECTS: TypesN.Project[] = [
       </p>,
   },
 ];
+
+export const RECOMMENDATIONS: TypesN.Recommendation[] = [
+  {
+    user: {
+      name: 'John Doe',
+      who: 'Co-worker',
+    },
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a quam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet.',
+  },
+  {
+    user: {
+      name: 'John Doe',
+      who: 'Co-worker',
+    },
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a quam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet.',
+  },
+]

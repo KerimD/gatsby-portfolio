@@ -9,7 +9,7 @@
   color: white;
   background: var(--accent);
   padding-left: 4rem;
-  border-radius: 1rem;
+  border-radius: var(--default-border-radius);
   overflow: hidden;
 }
 

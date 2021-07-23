@@ -1,6 +1,6 @@
 .project {
+  width: 100%;
   max-width: 60ch;
-  // margin: 12rem 0 3rem;
 
   & > h3 {
     font-size: 2.3rem;
@@ -27,9 +27,10 @@
 
   & img {
     position: relative;
-    border: 7px solid white;
+    width: 100%;
     max-width: 60ch;
-    border-radius: 1.5rem;
+    border: 7px solid white;
+    border-radius: var(--default-border-radius);
     box-shadow:
       0 4px  4px  $box-shadow-color,
       0 8px  8px  $box-shadow-color,

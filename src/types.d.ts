@@ -24,4 +24,14 @@ declare namespace TypesN {
     liveSite: string;
     description: JSX.Element;
   }
+
+  type User = {
+    name: string;
+    who: string;
+  }
+
+  type Recommendation = {
+    user: User;
+    content: string;
+  }
 }
