@@ -11,18 +11,21 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-label p {
-  font-family: var(--medium);
-  font-size: 1.1rem;
-  margin-bottom: 0.7rem;
+label {
+  width: 100%;
+
+  & > p {
+    font-family: var(--medium);
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
 }
 
 input, textarea {
   width: 100%;
-  padding: 0 1.5rem;
   border: none;
   font-size: 1rem;
   outline: none;

@@ -13,6 +13,8 @@
 .project {
   width: 100%;
   max-width: 60ch;
+  display: flex;
+  flex-direction: column;
 
   & > h3 {
     font-size: 2.3rem;
@@ -28,31 +30,41 @@
 
   & > p {
     margin-bottom: 4rem;
-  }
-
-  & span {
-    color: var(--accent);
-    font-family: var(--medium);
-  }
-
-  $box-shadow-color: rgba(0, 0, 0, 0.1);
-
-  & img {
-    position: relative;
-    width: 100%;
-    max-width: 60ch;
-    border: 7px solid white;
-    border-radius: var(--default-border-radius);
-    box-shadow:
-      0 4px  4px  $box-shadow-color,
-      0 8px  8px  $box-shadow-color,
-      0 16px 16px $box-shadow-color;
-    transition: all 200ms;
-
-    &:hover {
-      box-shadow: none;
-      cursor: pointer;
-      transform: scale(1.01);
+    
+    & > span {
+      color: var(--accent);
+      font-family: var(--medium);
     }
+  }
+}
+
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+.image-link {
+  width: 100%;
+  // max-width: 40ch;
+  border: 7px solid white;
+  overflow: hidden;
+  border-radius: var(--default-border-radius);
+  background: white;
+  box-shadow:
+    0 4px  4px  $box-shadow-color,
+    0 8px  8px  $box-shadow-color,
+    0 16px 16px $box-shadow-color;
+  transition: all 200ms;
+  display: flex;
+  // justify-content: center;
+  // align-items: flex-start;
+
+  &:hover {
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
+  & > img {
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
   }
 }

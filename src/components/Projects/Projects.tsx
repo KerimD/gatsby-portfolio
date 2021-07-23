@@ -20,7 +20,7 @@ const Projects = () =>
           <a href={project.github} target="_blank">
             <Github height='22' />
           </a>
-          <a href={project.liveSite} target="_blank">
+          <a className='image-link' href={project.liveSite} target="_blank">
             <img src={project.imageSrc} alt={project.name + ' image'} />
           </a>
         </div>
