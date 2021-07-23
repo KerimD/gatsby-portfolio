@@ -11,7 +11,7 @@ const HeroLinks = () =>
         <div className='hover-link'>
           <p>{link.name}</p>
           {link.href
-            ? <a href={link.href}>
+            ? <a href={link.href} target="_blank">
               <link.icon height='24' />
             </a>
             : <div>

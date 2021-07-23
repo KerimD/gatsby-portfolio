@@ -5,6 +5,7 @@ import './contact.scss';
 const Contact = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
+    console.log('potato');
   }
 
   return (

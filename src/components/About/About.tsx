@@ -9,7 +9,7 @@ const About = () =>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a quam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a quam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet.</p>
     <div className='recommendation-cards'>
       {RECOMMENDATIONS.map((r) =>
-        <div className='recommendation-card'>
+        <div key={r.user.name} className='recommendation-card'>
           <h4>{r.user.name}</h4>
           <div className='who'>{r.user.who}</div>
           <p>{r.content}</p>

@@ -7,16 +7,16 @@ const Hero = () =>
   <footer>
     <div className='footer-content-container'>
       <ul>
-        <li><h3>SOCIALS</h3></li>
+        <li key='socials'><h3>SOCIALS</h3></li>
         {SOCIALS.map((e) => e.href
-          ? <li><a href={e.href}>{e.name}</a></li>
-          : <li>{e.name}</li>)}
+          ? <li key={e.name}><a href={e.href}>{e.name}</a></li>
+          : <li key={e.name}>{e.name}</li>)}
       </ul>
       <ul>
-        <li><h3>CONTACT ME</h3></li>
+        <li key='contactme'><h3>CONTACT ME</h3></li>
         {CONTACTS.map((e) => e.href
-          ? <li><a href={e.href}>{e.name}</a></li>
-          : <li>{e.name}</li>)}
+          ? <li key={e.name}><a href={e.href}>{e.name}</a></li>
+          : <li key={e.name}>{e.name}</li>)}
       </ul>
     </div>
     <div className='copywrite'>© 2021 Deniz Kerim</div>
