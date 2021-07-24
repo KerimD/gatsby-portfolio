@@ -79,7 +79,11 @@ section {
   max-width: 86.875rem;
   display: flex;
   flex-direction: column;
-  padding: 3rem 4.375rem;
+  padding: 3rem 2rem;
+
+  @media only screen and (min-width: 615px) {
+    padding: 3rem 4.375rem;
+  }
 }
 
 section:last-child {

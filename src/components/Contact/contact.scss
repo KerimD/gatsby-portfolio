@@ -4,7 +4,7 @@
 form {
   width: 100%;
   max-width: 46rem;
-  padding: 3rem 6rem;
+  padding: 3rem;
   margin: 0 auto;
   background: white;
   border-radius: var(--default-border-radius);
@@ -12,6 +12,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media only screen and (min-width: 850px) {
+    padding: 3rem 6rem;
+  }
 }
 
 label {

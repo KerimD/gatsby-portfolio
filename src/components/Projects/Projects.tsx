@@ -11,9 +11,10 @@ const Projects = () =>
       {PROJECTS.map((project) =>
         <div className='project' key={project.name} >
           <div className='project-information'>
-            {project.title != 'Solo Developer'
-              ? <h3>{project.title}, {project.name}</h3>
-              : <h3>{project.name}</h3>}
+            <h3>
+              {project.title != 'Solo Developer' && `${project.title}, `}
+              {project.name}
+            </h3>
             <div className='project-date'>{project.date}</div>
             {project.description}
             <a href={project.github} target='_blank'>
