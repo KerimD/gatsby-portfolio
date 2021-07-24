@@ -3,11 +3,8 @@
 }
 
 .projects-container {
-  margin-top: 4rem;
+  margin: 4rem auto 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 17rem;
 }
 
 .project {
@@ -42,7 +39,6 @@ $box-shadow-color: rgba(0, 0, 0, 0.1);
 
 .image-link {
   width: 100%;
-  // max-width: 40ch;
   border: 7px solid white;
   overflow: hidden;
   border-radius: var(--default-border-radius);
@@ -53,8 +49,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.1);
     0 16px 16px $box-shadow-color;
   transition: all 200ms;
   display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
+  justify-content: center;
 
   &:hover {
     box-shadow: none;
