@@ -3,6 +3,7 @@ import React from "react";
 import './about.scss';
 import { RECOMMENDATIONS } from '../../assets/data';
 
+// picture of me doing something I like doing
 const About = () =>
   <section id='about'>
     <h2>About</h2>

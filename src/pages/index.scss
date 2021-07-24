@@ -29,15 +29,15 @@
   --default-border-radius: 1.5rem;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 1em;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background-color: white;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: darkgray;
   border-radius: 999px;
   border: 3px solid white;
