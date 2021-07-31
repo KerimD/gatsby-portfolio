@@ -22,7 +22,7 @@ declare namespace TypesN {
     imageSrc: string;
     github: string;
     liveSite: string;
-    description: JSX.Element;
+    description: string;
   }
 
   type User = {

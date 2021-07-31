@@ -9,14 +9,14 @@ const Projects = () =>
     <h2>Projects</h2>
     <div className='projects-container'>
       {PROJECTS.map((project) =>
-        <div className='project' key={project.name} >
+        <div className='project' key={project.name}>
           <div className='project-information'>
             <h3>
               {project.title != 'Solo Developer' && `${project.title}, `}
               {project.name}
             </h3>
             <div className='project-date'>{project.date}</div>
-            {project.description}
+            <p>{project.description}</p>
             <a href={project.github} target='_blank'>
               <Github height='22' />
             </a>

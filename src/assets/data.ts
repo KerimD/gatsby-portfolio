@@ -1,5 +1,3 @@
-import React from 'react';
-
 // svg
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
@@ -50,10 +48,7 @@ export const PROJECTS: TypesN.Project[] = [
     imageSrc: portfolio,
     github: 'https://github.com/KerimD/gatsby-portfolio',
     liveSite: '',
-    description:
-      <p>
-        A beautiful portfolio to display my skills.
-      </p>,
+    description: `A beautiful portfolio to display my skills.`,
   },
   {
     name: 'ACM Web',
@@ -62,11 +57,8 @@ export const PROJECTS: TypesN.Project[] = [
     imageSrc: acmWeb,
     github: 'https://github.com/sigdotcom/mstacm.org',
     liveSite: 'https://mstacm.org/',
-    description:
-      <p>
-        Conduct scrum meetings, assign issues, and review pull
-        requests to prepare students for a career in cs.
-      </p>,
+    description: `Conduct scrum meetings, assign issues, and review pull
+      requests to prepare students for a career in cs.`,
   },
   {
     name: 'Discord Battlerite Draft Bot',
@@ -75,12 +67,9 @@ export const PROJECTS: TypesN.Project[] = [
     imageSrc: discordBot,
     github: 'https://github.com/KerimD/draft_bot',
     liveSite: 'https://github.com/KerimD/draft_bot',
-    description:
-      <p>
-        Devised a solution that organized 1,000s of competitive
-        matches for pro players by working with discord’s API
-        to create a <span>Python</span> bot.
-      </p>,
+    description: `Devised a solution that organized 1,000s of competitive
+      matches for pro players by working with discord’s API to create a Python
+      bot.`
   },
   {
     name: 'BDO Enhancing Calculator',
@@ -89,13 +78,9 @@ export const PROJECTS: TypesN.Project[] = [
     imageSrc: bdoCalc,
     github: 'https://github.com/KerimD/bdo-app',
     liveSite: 'https://github.com/KerimD/bdo-app',
-    description:
-      <p>
-        A statistic calculator that predicts optimal usage of
-        in game currency. The website is built using
-        <span> TypeScript</span> with a <span>React.js </span>
-        frontend and a <span>Koa.js</span> REST API.
-      </p>,
+    description: `A statistic calculator that predicts optimal usage of in game
+      currency. The website is built using TypeScript with a React.js frontend
+      and a Koa.js REST API.`
   },
 ];
 
@@ -105,7 +90,7 @@ export const RECOMMENDATIONS: TypesN.Recommendation[] = [
       name: 'John Doe',
       who: 'Co-worker',
     },
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a quam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aquam nec sem varius dictum. Duis erat risus, sodales eu est et, tristique tincidunt libero. In sit amet orci non purus gravida imperdiet.',
   },
   {
     user: {

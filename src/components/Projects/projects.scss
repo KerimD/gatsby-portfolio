@@ -1,28 +1,23 @@
 #projects {}
 
 .projects-container {
-  margin-top: 4rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   gap: 17rem;
-
-  @media only screen and (min-width: 959px) {
-    gap: 0;
-  }
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   gap: 4rem;
 
+  &:first-child .image-link {
+    border-color: #f8f8f8;
+  }
+
   @media only screen and (min-width: 959px) {
-    height: 100vh;
-    min-height: 40rem;
     justify-content: space-between;
-    align-items: flex-start;
     flex-direction: row;
   }
 }
@@ -92,6 +87,10 @@ $box-shadow-color: rgba(0, 0, 0, 0.1);
   transition: all 200ms;
   display: flex;
   justify-content: center;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   &:hover {
     box-shadow: none;
