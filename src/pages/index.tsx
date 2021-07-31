@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-import './index.scss';
+import './index.css';
 
 const HomePage = () =>
   <div className="home-page">

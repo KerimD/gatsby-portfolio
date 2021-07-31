@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './footer.scss';
+import './footer.css';
 import { SOCIALS, CONTACTS } from '../../assets/data';
 
 const Hero = () =>

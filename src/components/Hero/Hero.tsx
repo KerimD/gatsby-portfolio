@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeroLinks from "./HeroLinks";
 
-import './hero.scss';
+import './hero.css';
 
 const Hero = () =>
   <div className="hero">

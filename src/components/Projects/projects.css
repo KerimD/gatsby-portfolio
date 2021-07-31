@@ -71,8 +71,6 @@
   }
 }
 
-$box-shadow-color: rgba(0, 0, 0, 0.1);
-
 .image-link {
   width: 100%;
   max-width: 35rem;
@@ -81,16 +79,13 @@ $box-shadow-color: rgba(0, 0, 0, 0.1);
   border-radius: var(--default-border-radius);
   background: white;
   box-shadow:
-    0 4px  4px  $box-shadow-color,
-    0 8px  8px  $box-shadow-color,
-    0 16px 16px $box-shadow-color;
+    0 4px  4px  rgba(0, 0, 0, 0.1),
+    0 8px  8px  rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
   transition: all 200ms;
   display: flex;
   justify-content: center;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
+  user-select: none;
 
   &:hover {
     box-shadow: none;

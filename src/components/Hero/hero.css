@@ -59,10 +59,7 @@
   letter-spacing: 0.04em;
   opacity: 0.03;
   font-family: var(--medium);
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
+  user-select: none;
 
   @media only screen and (min-width: 1200px) {
     font-size: 5rem;

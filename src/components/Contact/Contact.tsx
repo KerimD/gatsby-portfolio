@@ -1,6 +1,6 @@
 import React from "react";
 
-import './contact.scss';
+import './contact.css';
 
 const Contact = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {

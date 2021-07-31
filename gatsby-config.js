@@ -1,10 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "gatsby-portfolio",
+    title: 'gatsby-portfolio',
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-typescript",
+    'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [
+          require('autoprefixer'),
+          require('postcss-custom-media'),
+          require('postcss-nested'),
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -12,6 +21,6 @@ module.exports = {
           include: /svg/
         }
       }
-    }
+    },
   ],
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './projects.scss';
+import './projects.css';
 import { PROJECTS } from '../../assets/data';
 import Github from '../../assets/images/svg/github.svg';
 

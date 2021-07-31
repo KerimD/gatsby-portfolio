@@ -1,6 +1,6 @@
 import React from "react";
 
-import './about.scss';
+import './about.css';
 import { RECOMMENDATIONS } from '../../assets/data';
 
 // picture of me doing something I like doing

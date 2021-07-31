@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './hero-links.scss';
+import './hero-links.css';
 import { HERO_LINKS } from '../../assets/data';
 
 const HeroLinks = () =>
