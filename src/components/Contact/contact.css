@@ -13,7 +13,7 @@ form {
   flex-direction: column;
   gap: 2rem;
 
-  @media only screen and (min-width: 850px) {
+  @media only screen and (--tablet) {
     padding: 3rem 6rem;
   }
 }
