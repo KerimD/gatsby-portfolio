@@ -1,15 +1,21 @@
 .hero-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
+
+  @media only screen and (--tablet) {
+    flex-direction: column;
+  }
 }
 
 .hero-link-wrapper {
   position: relative;
   padding: 0.5rem 0.75rem;
 
-  &:hover .hover-link {
-    display: flex;
+  @media only screen and (--tablet) {
+    &:hover .hover-link {
+      display: flex;
+    }
   }
 }
 

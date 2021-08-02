@@ -18,13 +18,14 @@
   src: url('../assets/fonts/pacifico/Pacifico-Regular.ttf') format('truetype');
 }
 
-@custom-media --mobile     (min-width: 500px);
-@custom-media --big-mobile (min-width: 615px);
-@custom-media --tablet     (min-width: 850px);
-@custom-media --half       (min-width: 959px);
-@custom-media --random     (min-width: 1050px);
-@custom-media --wide       (min-width: 1200px);
-@custom-media --super-wide (min-width: 1300px);
+@custom-media --tiny-mobile (min-width: 360px);
+@custom-media --mobile      (min-width: 500px);
+@custom-media --big-mobile  (min-width: 615px);
+@custom-media --tablet      (min-width: 850px);
+@custom-media --half        (min-width: 959px);
+@custom-media --random      (min-width: 1050px);
+@custom-media --wide        (min-width: 1200px);
+@custom-media --super-wide  (min-width: 1300px);
 
 :root {
   --accent: #605bcb;
@@ -83,13 +84,14 @@ main {
 section {
   width: 100%;
   max-width: 86.875rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   padding: 3rem 2rem;
 
   @media only screen and (--big-mobile) {
     padding: 3rem 4.375rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -98,13 +100,25 @@ section:last-child {
 }
 
 section > h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: var(--bold);
   color: var(--accent);
   margin-bottom: 3rem;
 
   &::after {
-    content: ' /';
+    content: '/';
+  }
+
+  @media only screen and (--tiny-mobile) {
+    & {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (--tablet) {
+    & {
+      font-size: 4rem;
+    }
   }
 }
 

@@ -16,18 +16,11 @@ footer {
   flex-direction: column;
   gap: 2rem;
 
-  @media only screen and (--mobile) {
-    gap: 0;
-    width: 100%;
-    max-width: 100rem;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
   & > ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   & * {
@@ -50,9 +43,21 @@ footer {
     text-decoration: underline;
   }
 
-  /* make highlighting text easier */
+  /* makes highlighting text easier */
   & > ul > li {
     margin: 0 2rem;
+  }
+
+  @media only screen and (--mobile) {
+    gap: 0;
+    width: 100%;
+    max-width: 100rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    & > ul {
+      align-items: start;
+    }
   }
 }
 

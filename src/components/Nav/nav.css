@@ -13,10 +13,12 @@
 }
 
 .nav-logo {
+  line-height: 1;
   font-size: 1.65rem;
-  text-decoration: none;
   padding: 0.625rem;
   font-family: var(--crazy-font);
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .nav-link-list {

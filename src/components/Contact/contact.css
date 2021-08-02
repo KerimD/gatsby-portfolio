@@ -1,10 +1,9 @@
-#contact {
-}
+#contact {}
 
 form {
   width: 100%;
   max-width: 46rem;
-  padding: 3rem;
+  padding: 3rem 2rem;
   margin: 0 auto;
   background: white;
   border-radius: var(--default-border-radius);
@@ -12,6 +11,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media only screen and (--big-mobile) {
+    padding: 3rem;
+  }
 
   @media only screen and (--tablet) {
     padding: 3rem 6rem;
