@@ -22,7 +22,7 @@
 @custom-media --big-mobile (min-width: 615px);
 @custom-media --tablet     (min-width: 850px);
 @custom-media --half       (min-width: 959px);
-@custom-media --full       (min-width: 1079px);
+@custom-media --random     (min-width: 1050px);
 @custom-media --wide       (min-width: 1200px);
 @custom-media --super-wide (min-width: 1300px);
 
@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   padding: 0;
   font-family: Roboto;
-  /* outline: 3px solid black; */
+  /* outline: 1px dotted red; */
 }
 
 html {
@@ -68,7 +68,6 @@ html {
 }
 
 header {
-  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;

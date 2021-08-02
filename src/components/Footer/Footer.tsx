@@ -14,9 +14,8 @@ const Hero = () =>
       </ul>
       <ul>
         <li key='contactme'><h3>CONTACT ME</h3></li>
-        {CONTACTS.map((e) => e.href
-          ? <li key={e.name}><a href={e.href}>{e.name}</a></li>
-          : <li key={e.name}>{e.name}</li>)}
+        {CONTACTS.map((e) =>
+          <li key={e.name}>{e.name}</li>)}
       </ul>
     </div>
     <div className='copywrite'>© 2021 Deniz Kerim</div>

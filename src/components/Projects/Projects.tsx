@@ -15,10 +15,10 @@ const Projects = () =>
               {project.title != 'Solo Developer' && `${project.title}, `}
               {project.name}
             </h3>
-            <div className='project-date'>{project.date}</div>
+            <time>{project.date}</time>
             <p>{project.description}</p>
             <a href={project.github} target='_blank'>
-              <Github height='22' />
+              <Github height='22' />Github
             </a>
           </div>
           <a className='image-link' href={project.liveSite} target='_blank'>

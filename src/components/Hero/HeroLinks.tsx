@@ -7,7 +7,7 @@ const HeroLinks = () =>
   <div className='hero-links'>
     {HERO_LINKS.map((link) =>
       <div key={link.name} className='hero-link-wrapper'>
-        <link.icon fill='white' height='24' />
+        <link.icon height='24' />
         <div className='hover-link'>
           <p>{link.name}</p>
           {link.href

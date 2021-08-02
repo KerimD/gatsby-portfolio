@@ -49,6 +49,11 @@ footer {
   & a:hover {
     text-decoration: underline;
   }
+
+  /* make highlighting text easier */
+  & > ul > li {
+    margin: 0 2rem;
+  }
 }
 
 .copywrite {

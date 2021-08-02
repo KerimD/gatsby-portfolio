@@ -1,11 +1,22 @@
 .nav {
+  display: none;
   width: 100%;
-  max-width: 82.5rem;
+  max-width: 86.875rem;
   height: 3.75rem;
-  margin-top: 2rem;
-  padding-left: 4rem;
-  display: flex;
+  padding: 0 4.375rem;
   align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (--tablet) {
+    display: flex;
+  }
+}
+
+.nav-logo {
+  font-size: 1.65rem;
+  text-decoration: none;
+  padding: 0.625rem;
+  font-family: var(--crazy-font);
 }
 
 .nav-link-list {
@@ -14,7 +25,7 @@
   align-items: center;
 
   & > li {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 
   & > li:last-child {
@@ -36,5 +47,12 @@
     &::after {
       content: '/';
     }
+  }
+
+  @media only screen and (--half) {
+    & > li {
+      margin-right: 2rem;
+    }
+  
   }
 }

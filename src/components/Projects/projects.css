@@ -32,7 +32,8 @@
     font-weight: normal;
   }
 
-  & > .project-date {
+  & > time {
+    display: block;
     color: var(--light-gray);
     margin-bottom: 1.5rem;
   }
@@ -47,16 +48,33 @@
     }
   }
 
+  & > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   @media only screen and (--half) {
     max-width: 40%;
     padding: 7px 0;
 
+    & > time {
+      margin-bottom: 2rem;
+    }
+
     & > p {
       font-size: 1.7rem;
-    }
+      margin-bottom: 2rem;
+  }
   }
 
-  @media only screen and (--full) {
+  @media only screen and (--random) {
     & > p {
       font-size: 2rem;
     }
