@@ -15,14 +15,20 @@ declare namespace TypesN {
     icon: any;
   }
 
+  type Skills = {
+    name: string;
+    logo: string;
+  }
+
   type Project = {
     name: string;
-    title: string;
+    title?: string;
     date: string;
-    imageSrc: string;
+    description: string;
+    preview: string;
+    softwareTools: Software[];
     github: string;
     liveSite: string;
-    description: string;
   }
 
   type User = {

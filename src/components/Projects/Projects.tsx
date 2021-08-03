@@ -12,7 +12,7 @@ const Projects = () =>
         <div className='project' key={project.name}>
           <div className='project-information'>
             <h3>
-              {project.title != 'Solo Developer' && `${project.title}, `}
+              {project.title && `${project.title}, `}
               {project.name}
             </h3>
             <time>{project.date}</time>
@@ -22,7 +22,7 @@ const Projects = () =>
             </a>
           </div>
           <a className='image-link' href={project.liveSite} target='_blank'>
-            <img src={project.imageSrc} alt={project.name + ' image'} />
+            <img src={project.preview} alt={project.name + ' image'} />
           </a>
         </div>
       )}
