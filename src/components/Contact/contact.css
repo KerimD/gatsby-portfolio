@@ -50,7 +50,7 @@ textarea {
 input[type=submit] {
   font-family: var(--medium);
   align-self: flex-start;
-  width: initial;
+  width: 100%;
   padding: 1rem 3rem;
   margin-left: 0;
   font-size: 1.1rem;
@@ -60,5 +60,9 @@ input[type=submit] {
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (--mobile) {
+    width: initial;
   }
 }
