@@ -9,13 +9,19 @@ import phone from './images/svg/phone.svg';
 import email from './images/svg/email.svg';
 
 import html5 from './images/svg/logos/html5.svg';
+import css3 from './images/svg/logos/css3.svg';
+import postcss from './images/svg/logos/postcss.svg';
+import sass from './images/svg/logos/sass.svg';
+import javascript from './images/svg/logos/javascript.svg';
+import typescript from './images/svg/logos/typescript.svg';
 import nodejs from './images/svg/logos/nodejs.svg';
 import reactjs from './images/svg/logos/reactjs.svg';
 import gatsbyjs from './images/svg/logos/gatsbyjs.svg';
-import javascript from './images/svg/logos/javascript.svg';
-import typescript from './images/svg/logos/typescript.svg';
-import postcss from './images/svg/logos/postcss.svg';
+import stripejs from './images/svg/logos/stripejs.svg';
+import python from './images/svg/logos/python.svg';
 import git from './images/svg/logos/git.svg';
+import figma from './images/svg/logos/figma.svg';
+import discord from './images/svg/logos/discord.svg';
 
 export const SOCIALS: TypesN.Social[] = [
   {
@@ -49,19 +55,19 @@ export const HERO_LINKS: TypesN.Social[] = [
 
 export const SKILLS: { [key: string]: TypesN.Tool } = {
   'html': { name: 'html5', logo: html5 },
-  'css': { name: 'css3', logo: html5 },
-  'sass': { name: 'sass', logo: html5 },
-  'postcss': { name: 'postcss', logo: postcss },
+  'css': { name: 'css3', logo: css3 },
+  'sass': { name: 'sass', logo: sass, href: '' },
+  'postcss': { name: 'postcss', logo: postcss, href: 'https://github.com/postcss/postcss' },
   'javascript': { name: 'javascript', logo: javascript },
-  'typescript': { name: 'typescript', logo: typescript },
-  'nodejs': { name: 'nodejs', logo: nodejs },
-  'reactjs': { name: 'reactjs', logo: reactjs },
-  'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs },
-  'koajs': { name: 'koajs', logo: html5 },
+  'typescript': { name: 'typescript', logo: typescript, href: 'https://www.typescriptlang.org/' },
+  'nodejs': { name: 'nodejs', logo: nodejs, href: 'https://nodejs.org/en/' },
+  'reactjs': { name: 'reactjs', logo: reactjs, href: 'https://reactjs.org/' },
+  'stripejs': { name: 'reactjs', logo: stripejs, href: 'https://stripe.com/' },
+  'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs, href: 'https://www.gatsbyjs.com/' },
   'expressjs': { name: 'expressjs', logo: html5 },
   'c++': { name: 'c++', logo: html5 },
   'java': { name: 'java', logo: html5 },
-  'python': { name: 'python', logo: html5 },
+  'python': { name: 'python', logo: python, href: 'https://www.python.org/' },
   'dart': { name: 'dart', logo: html5 },
   'bash': { name: 'bash', logo: html5 },
   'linux': { name: 'linux', logo: html5 },
@@ -71,8 +77,9 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'gwt': { name: 'gwt', logo: html5 },
   'wix': { name: 'wix', logo: html5 },
   'flask': { name: 'flask', logo: html5 },
-  'figma': { name: 'figma', logo: html5 },
-  'git': { name: 'git', logo: git },
+  'git': { name: 'git', logo: git, href: 'https://git-scm.com/' },
+  'figma': { name: 'figma', logo: figma, href: 'https://www.figma.com/' },
+  'discord': { name: 'figma', logo: discord, href: 'https://discord.com/' },
 }
 
 export const PROJECTS: TypesN.Project[] = [
@@ -90,6 +97,7 @@ export const PROJECTS: TypesN.Project[] = [
       SKILLS['reactjs'],
       SKILLS['gatsbyjs'],
       SKILLS['git'],
+      SKILLS['figma'],
     ],
     github: 'https://github.com/KerimD/gatsby-portfolio',
     liveSite: '',
@@ -101,7 +109,17 @@ export const PROJECTS: TypesN.Project[] = [
     description: `Conduct scrum meetings, assign issues, and review pull
       requests to prepare students for a career in cs.`,
     preview: acmWeb,
-    softwareTools: [],
+    softwareTools: [
+      SKILLS['html'],
+      SKILLS['css'],
+      SKILLS['javascript'],
+      SKILLS['typescript'],
+      SKILLS['nodejs'],
+      SKILLS['reactjs'],
+      SKILLS['stripejs'],
+      SKILLS['git'],
+      SKILLS['figma'],
+    ],
     github: 'https://github.com/sigdotcom/mstacm.org',
     liveSite: 'https://mstacm.org/',
   },
@@ -112,7 +130,11 @@ export const PROJECTS: TypesN.Project[] = [
       matches for pro players by working with discord’s API to create a Python
       bot.`,
     preview: discordBot,
-    softwareTools: [],
+    softwareTools: [
+      SKILLS['python'],
+      SKILLS['discord'],
+      SKILLS['git'],
+    ],
     github: 'https://github.com/KerimD/draft_bot',
     liveSite: 'https://github.com/KerimD/draft_bot',
   },
@@ -122,7 +144,15 @@ export const PROJECTS: TypesN.Project[] = [
     description: `A statistic calculator that predicts optimal usage of in game
       currency.`,
     preview: bdoCalc,
-    softwareTools: [],
+    softwareTools: [
+      SKILLS['html'],
+      SKILLS['sass'],
+      SKILLS['javascript'],
+      SKILLS['typescript'],
+      SKILLS['nodejs'],
+      SKILLS['reactjs'],
+      SKILLS['git'],
+    ],
     github: 'https://github.com/KerimD/bdo-app',
     liveSite: 'https://github.com/KerimD/bdo-app',
   },

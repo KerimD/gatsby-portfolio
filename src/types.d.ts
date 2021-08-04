@@ -18,6 +18,7 @@ declare namespace TypesN {
   type Tool = {
     name: string;
     logo: React.FC<React.SVGProps<SVGSVGElement>>;
+    href?: string;
   }
 
   type Project = {

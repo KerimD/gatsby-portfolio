@@ -21,8 +21,11 @@ const Projects = () =>
               <Github height='22' />Github
             </a>
             <div className='tool-logos'>
-              {project.softwareTools.map((tool) =>
-                <tool.logo width='40' height='40' />
+              {project.softwareTools.map((tool) => tool.href
+                ? <a href={tool.href} target='_blank'>
+                  <tool.logo width='40' height='40' />
+                </a>
+                : <tool.logo width='40' height='40' />
               )}
             </div>
           </div>
