@@ -20,6 +20,11 @@ const Projects = () =>
             <a href={project.github} target='_blank'>
               <Github height='22' />Github
             </a>
+            <div className='tool-logos'>
+              {project.softwareTools.map((tool) =>
+                <tool.logo width='40' height='40' />
+              )}
+            </div>
           </div>
           <a className='image-link' href={project.liveSite} target='_blank'>
             <img src={project.preview} alt={project.name + ' image'} />

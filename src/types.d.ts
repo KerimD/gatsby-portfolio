@@ -12,12 +12,12 @@ declare namespace TypesN {
   type Social = {
     name: string;
     href?: string;
-    icon: any;
+    icon: FC<SVGProps<SVGSVGElement>>;
   }
 
-  type Skills = {
+  type Tool = {
     name: string;
-    logo: string;
+    logo: React.FC<React.SVGProps<SVGSVGElement>>;
   }
 
   type Project = {
@@ -26,7 +26,7 @@ declare namespace TypesN {
     date: string;
     description: string;
     preview: string;
-    softwareTools: Software[];
+    softwareTools: Tool[];
     github: string;
     liveSite: string;
   }

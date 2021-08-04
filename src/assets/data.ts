@@ -1,12 +1,21 @@
+import portfolio from './images/png/portfolio.png';
+import acmWeb from './images/png/acm-web.png';
+import discordBot from './images/png/discord-bot.png';
+import bdoCalc from './images/png/bdo.png';
+
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
 import phone from './images/svg/phone.svg';
 import email from './images/svg/email.svg';
 
-import portfolio from './images/portfolio.png';
-import acmWeb from './images/acm-web.png';
-import discordBot from './images/discord-bot.png';
-import bdoCalc from './images/bdo.png';
+import html5 from './images/svg/logos/html5.svg';
+import nodejs from './images/svg/logos/nodejs.svg';
+import reactjs from './images/svg/logos/reactjs.svg';
+import gatsbyjs from './images/svg/logos/gatsbyjs.svg';
+import javascript from './images/svg/logos/javascript.svg';
+import typescript from './images/svg/logos/typescript.svg';
+import postcss from './images/svg/logos/postcss.svg';
+import git from './images/svg/logos/git.svg';
 
 export const SOCIALS: TypesN.Social[] = [
   {
@@ -38,30 +47,32 @@ export const HERO_LINKS: TypesN.Social[] = [
   CONTACTS[0],
 ];
 
-export const SKILLS: { [key: string]: TypesN.Skills } = {
-  'html': { name: 'html5', logo: '' },
-  'css': { name: 'css3', logo: '' },
-  'javascript': { name: 'javascript', logo: '' },
-  'typescript': { name: 'typescript', logo: '' },
-  'nodejs': { name: 'nodejs', logo: '' },
-  'reactjs': { name: 'reactjs', logo: '' },
-  'gatsbyjs': { name: 'gatsbyjs', logo: '' },
-  'koajs': { name: 'koajs', logo: '' },
-  'expressjs': { name: 'expressjs', logo: '' },
-  'c++': { name: 'c++', logo: '' },
-  'java': { name: 'java', logo: '' },
-  'python': { name: 'python', logo: '' },
-  'dart': { name: 'dart', logo: '' },
-  'bash': { name: 'bash', logo: '' },
-  'linux': { name: 'linux', logo: '' },
-  'springboot': { name: 'spring boot', logo: '' },
-  'cassandra': { name: 'cassandra', logo: '' },
-  'flutter': { name: 'flutter', logo: '' },
-  'gwt': { name: 'gwt', logo: '' },
-  'wix': { name: 'wix', logo: '' },
-  'flask': { name: 'flask', logo: '' },
-  'figma': { name: 'figma', logo: '' },
-  'git': { name: 'git', logo: '' },
+export const SKILLS: { [key: string]: TypesN.Tool } = {
+  'html': { name: 'html5', logo: html5 },
+  'css': { name: 'css3', logo: html5 },
+  'sass': { name: 'sass', logo: html5 },
+  'postcss': { name: 'postcss', logo: postcss },
+  'javascript': { name: 'javascript', logo: javascript },
+  'typescript': { name: 'typescript', logo: typescript },
+  'nodejs': { name: 'nodejs', logo: nodejs },
+  'reactjs': { name: 'reactjs', logo: reactjs },
+  'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs },
+  'koajs': { name: 'koajs', logo: html5 },
+  'expressjs': { name: 'expressjs', logo: html5 },
+  'c++': { name: 'c++', logo: html5 },
+  'java': { name: 'java', logo: html5 },
+  'python': { name: 'python', logo: html5 },
+  'dart': { name: 'dart', logo: html5 },
+  'bash': { name: 'bash', logo: html5 },
+  'linux': { name: 'linux', logo: html5 },
+  'springboot': { name: 'spring boot', logo: html5 },
+  'cassandra': { name: 'cassandra', logo: html5 },
+  'flutter': { name: 'flutter', logo: html5 },
+  'gwt': { name: 'gwt', logo: html5 },
+  'wix': { name: 'wix', logo: html5 },
+  'flask': { name: 'flask', logo: html5 },
+  'figma': { name: 'figma', logo: html5 },
+  'git': { name: 'git', logo: git },
 }
 
 export const PROJECTS: TypesN.Project[] = [
@@ -70,7 +81,16 @@ export const PROJECTS: TypesN.Project[] = [
     date: 'July 2021 - Today',
     description: `A beautiful portfolio to display my skills.`,
     preview: portfolio,
-    softwareTools: [],
+    softwareTools: [
+      SKILLS['html'],
+      SKILLS['postcss'],
+      SKILLS['javascript'],
+      SKILLS['typescript'],
+      SKILLS['nodejs'],
+      SKILLS['reactjs'],
+      SKILLS['gatsbyjs'],
+      SKILLS['git'],
+    ],
     github: 'https://github.com/KerimD/gatsby-portfolio',
     liveSite: '',
   },
@@ -100,8 +120,7 @@ export const PROJECTS: TypesN.Project[] = [
     name: 'BDO Enhancing Calculator',
     date: 'Oct - Dec 2019',
     description: `A statistic calculator that predicts optimal usage of in game
-      currency. The website is built using TypeScript with a React.js frontend
-      and a Koa.js REST API.`,
+      currency.`,
     preview: bdoCalc,
     softwareTools: [],
     github: 'https://github.com/KerimD/bdo-app',
