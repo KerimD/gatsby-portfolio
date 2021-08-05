@@ -11,12 +11,10 @@ const HeroLinks = () =>
         <div className='hover-link'>
           <p>{link.name}</p>
           {link.href
-            ? <a href={link.href} target="_blank">
+            ? <a href={link.href} target='_blank' rel='noreferrer'>
               <link.icon height='24' />
             </a>
-            : <div>
-              <link.icon height='24' />
-            </div>}
+            : <div><link.icon height='24' /></div>}
         </div>
       </div>
     )}

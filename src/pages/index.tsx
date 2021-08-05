@@ -12,7 +12,7 @@ import './index.css';
 
 const HomePage = () =>
   <>
-    <Helmet titleTemplate='Deniz Kerim | %s'>
+    <Helmet titleTemplate='Deniz Kerim - %s'>
       <title>Personal Computer Science Portfolio</title>
       <html lang='en' />
       <meta
