@@ -100,7 +100,7 @@ export const PROJECTS: TypesN.Project[] = [
       SKILLS['figma'],
     ],
     github: 'https://github.com/KerimD/gatsby-portfolio',
-    liveSite: '',
+    liveSite: 'https://github.com/KerimD/gatsby-portfolio',
   },
   {
     name: 'ACM Web',

@@ -68,6 +68,7 @@
 
   @media only screen and (--tablet) {
     padding-bottom: 0;
+    margin: 0;
   }
 
   @media only screen and (--half) {

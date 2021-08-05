@@ -9,7 +9,9 @@ const Hero = () =>
       <ul>
         <li key='socials'><h3>SOCIALS</h3></li>
         {SOCIALS.map((e) => e.href
-          ? <li key={e.name}><a href={e.href} target='_blank'>{e.name}</a></li>
+          ? <li key={e.name}><a href={e.href} target='_blank' rel='noreferrer'>
+            {e.name}
+          </a></li>
           : <li key={e.name}>{e.name}</li>)}
       </ul>
       <ul>

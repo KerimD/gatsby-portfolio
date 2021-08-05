@@ -17,19 +17,24 @@ const Projects = () =>
             </h3>
             <time>{project.date}</time>
             <p>{project.description}</p>
-            <a href={project.github} target='_blank'>
+            <a href={project.github} target='_blank' rel='noreferrer'>
               <Github height='22' />Github
             </a>
             <div className='tool-logos'>
               {project.softwareTools.map((tool) => tool.href
-                ? <a href={tool.href} target='_blank'>
+                ? <a href={tool.href} target='_blank' rel='noreferrer'>
                   <tool.logo width='40' height='40' />
                 </a>
                 : <tool.logo width='40' height='40' />
               )}
             </div>
           </div>
-          <a className='image-link' href={project.liveSite} target='_blank'>
+          <a
+            className='image-link'
+            href={project.liveSite}
+            target='_blank'
+            rel='noreferrer'
+          >
             <img src={project.preview} alt={project.name + ' image'} />
           </a>
         </div>

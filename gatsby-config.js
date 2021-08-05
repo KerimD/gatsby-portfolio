@@ -3,6 +3,7 @@ module.exports = {
     title: 'gatsby-portfolio',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-plugin-postcss',
