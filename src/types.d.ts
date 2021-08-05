@@ -11,7 +11,7 @@ declare module "*.png" {
 declare namespace TypesN {
   type Social = {
     name: string;
-    href?: string;
+    href: string;
     icon: FC<SVGProps<SVGSVGElement>>;
   }
 

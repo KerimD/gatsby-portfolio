@@ -39,6 +39,7 @@ export const SOCIALS: TypesN.Social[] = [
 export const CONTACTS: TypesN.Social[] = [
   {
     name: '(636) 253-9503',
+    href: 'tel:6362539503',
     icon: phone,
   },
   {

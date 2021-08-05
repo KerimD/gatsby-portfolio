@@ -35,7 +35,7 @@
   --accent: #605bcb;
   --secondary: #ffd700;
   --dark: black;
-  --light-gray: rgb(156, 156, 156);
+  --light-gray: #9c9c9c;
   --medium: Roboto-Medium;
   --bold: Roboto-Bold;
   --crazy-font: Pacifico-Regular;
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #fbf7ff;
+  background-color: white;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -72,66 +72,66 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  padding-bottom: 9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-section {
-  width: 100%;
-  max-width: 86.875rem;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 2rem;
-
-  @media only screen and (--big-mobile) {
-    padding: 3rem 4.375rem;
-    margin-bottom: 5rem;
-  }
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
-section > h2 {
-  font-size: 2rem;
-  font-family: var(--bold);
-  color: var(--accent);
-  margin-bottom: 3rem;
-
-  &::after {
-    content: '/';
-  }
-
-  @media only screen and (--tiny-mobile) {
-    & {
-      font-size: 3rem;
-    }
-  }
-
-  @media only screen and (--tablet) {
-    & {
-      font-size: 4rem;
-    }
-  }
-}
-
 .home-page {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background: #fbf7ff;
+  background: white;
   background-image: radial-gradient(rgb(210, 210, 210) 1px, transparent 0);
   background-size: 22px 22px;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main {
+    padding-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section {
+    width: 100%;
+    max-width: 86.875rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+  
+    @media only screen and (--big-mobile) {
+      padding: 3rem 4.375rem;
+      margin-bottom: 5rem;
+    }
+  }
+  
+  section:last-child {
+    margin-bottom: 0;
+  }
+  
+  section > h2 {
+    font-size: 2rem;
+    font-family: var(--bold);
+    color: var(--accent);
+    margin-bottom: 3rem;
+  
+    &::after {
+      content: '/';
+    }
+  
+    @media only screen and (--tiny-mobile) {
+      & {
+        font-size: 3rem;
+      }
+    }
+  
+    @media only screen and (--tablet) {
+      & {
+        font-size: 4rem;
+      }
+    }
+  }
 }

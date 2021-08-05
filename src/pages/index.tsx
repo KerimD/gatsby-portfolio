@@ -18,8 +18,8 @@ const HomePage = () =>
       <meta
         name='description'
         content={`
-          Deniz Kerim's Personal Computer Science Portfolio. View Deniz's
-          personal projects and skills.
+          Deniz Kerim's personal computer science portfolio. View Deniz's
+          projects and skills.
         `}
       />
     </Helmet>
