@@ -56,7 +56,7 @@ export const HERO_LINKS: TypesN.Social[] = [
 export const SKILLS: { [key: string]: TypesN.Tool } = {
   'html': { name: 'html5', logo: html5 },
   'css': { name: 'css3', logo: css3 },
-  'sass': { name: 'sass', logo: sass, href: '' },
+  'sass': { name: 'sass', logo: sass, href: 'https://sass-lang.com/' },
   'postcss': { name: 'postcss', logo: postcss, href: 'https://github.com/postcss/postcss' },
   'javascript': { name: 'javascript', logo: javascript },
   'typescript': { name: 'typescript', logo: typescript, href: 'https://www.typescriptlang.org/' },
@@ -64,7 +64,7 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'reactjs': { name: 'reactjs', logo: reactjs, href: 'https://reactjs.org/' },
   'stripejs': { name: 'reactjs', logo: stripejs, href: 'https://stripe.com/' },
   'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs, href: 'https://www.gatsbyjs.com/' },
-  'expressjs': { name: 'expressjs', logo: html5 },
+  'expressjs': { name: 'expressjs', logo: html5, href: 'https://expressjs.com/' },
   'c++': { name: 'c++', logo: html5 },
   'java': { name: 'java', logo: html5 },
   'python': { name: 'python', logo: python, href: 'https://www.python.org/' },
