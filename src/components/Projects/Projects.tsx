@@ -5,24 +5,20 @@ import { PROJECTS } from '../../assets/data';
 import Github from '../../assets/images/svg/github.svg';
 
 const Projects = () => {
+  const animateProject =
+    (element: HTMLElement, observer: IntersectionObserver) => {
+      element.style.opacity = '1';
+      element.style.transform = 'translateY(0)';
+      observer.disconnect();
+    }
+
   useEffect(() => {
-    Array.from(document.getElementsByClassName('project')).forEach((v) =>
-      new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          entries[0].target.animate(
-            {
-              opacity: [0, 1],
-              transform: ['translateY(200px)', 'translateY(0)'],
-            },
-            {
-              duration: 400,
-              easing: 'ease-out',
-            }
-          );
-        }
-      }
-      ).observe(v)
-    )
+    Array
+      .from(document.getElementsByClassName('project')).forEach((v) =>
+        new IntersectionObserver((entries, observer) =>
+          entries[0].isIntersecting && animateProject(
+            entries[0].target as HTMLElement, observer
+          )).observe(v));
   }, []);
 
   return (
