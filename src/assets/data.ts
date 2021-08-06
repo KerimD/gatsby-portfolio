@@ -63,7 +63,7 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'typescript': { name: 'typescript', logo: typescript, href: 'https://www.typescriptlang.org/' },
   'nodejs': { name: 'nodejs', logo: nodejs, href: 'https://nodejs.org/en/' },
   'reactjs': { name: 'reactjs', logo: reactjs, href: 'https://reactjs.org/' },
-  'stripejs': { name: 'reactjs', logo: stripejs, href: 'https://stripe.com/' },
+  'stripejs': { name: 'stripejs', logo: stripejs, href: 'https://stripe.com/' },
   'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs, href: 'https://www.gatsbyjs.com/' },
   'expressjs': { name: 'expressjs', logo: html5, href: 'https://expressjs.com/' },
   'c++': { name: 'c++', logo: html5 },
@@ -72,7 +72,7 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'dart': { name: 'dart', logo: html5 },
   'bash': { name: 'bash', logo: html5 },
   'linux': { name: 'linux', logo: html5 },
-  'springboot': { name: 'spring boot', logo: html5 },
+  'springboot': { name: 'springboot', logo: html5 },
   'cassandra': { name: 'cassandra', logo: html5 },
   'flutter': { name: 'flutter', logo: html5 },
   'gwt': { name: 'gwt', logo: html5 },
@@ -80,14 +80,15 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'flask': { name: 'flask', logo: html5 },
   'git': { name: 'git', logo: git, href: 'https://git-scm.com/' },
   'figma': { name: 'figma', logo: figma, href: 'https://www.figma.com/' },
-  'discord': { name: 'figma', logo: discord, href: 'https://discord.com/' },
+  'discord': { name: 'discord', logo: discord, href: 'https://discord.com/' },
 }
 
 export const PROJECTS: TypesN.Project[] = [
   {
     name: 'My Portfolio',
     date: 'July 2021 - Today',
-    description: `A beautiful portfolio to display my skills.`,
+    description: `My most recent project, a beautiful portfolio
+    to display and show my experience.`,
     preview: portfolio,
     softwareTools: [
       SKILLS['html'],

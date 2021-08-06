@@ -1,3 +1,4 @@
+  
 .hero-links {
   display: flex;
   flex-direction: row;
@@ -6,41 +7,49 @@
   @media only screen and (--tablet) {
     flex-direction: column;
   }
+}
 
-  .hero-link {
-    padding: 0.35rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+.hero-link-wrapper {
+  position: relative;
+  padding: 0.5rem 0.75rem;
 
-    & > p {
-      padding-left: 0.35rem;
-      display: none;
-      font-family: var(--medium);
-      font-size: 1.125rem;
-      margin-right: 0.75rem;
-      white-space: nowrap;
-      color: black;
+  @media only screen and (--tablet) {
+    &:hover .hover-link {
+      display: flex;
     }
+  }
+}
 
-    & > a {
-      padding: 0.25rem;
-      border-radius: 6px;
+.hover-link {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+  margin-right: 0.2rem;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  align-items: center;
 
-      &:hover {
-        background: #dddddd;
-      }
+  & > p {
+    font-family: var(--medium);
+    font-size: 1.125rem;
+    margin-right: 0.75rem;
+    white-space: nowrap;
+    color: black;
+  }
+
+  & > a {
+    padding: 0.25rem;
+    border-radius: 6px;
+
+    &:hover {
+      background: lightgray;
     }
+  }
 
-    @media only screen and (--tablet) {
-      &:hover {
-        background: white;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.24);
-
-        & > p {
-          display: block;
-        }
-      }
-    }
+  & > div {
+    padding: 0.25rem;
   }
 }
