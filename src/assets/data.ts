@@ -1,7 +1,7 @@
-import portfolio from './images/png/portfolio.png';
-import acmWeb from './images/png/acm-web.png';
-import discordBot from './images/png/discord-bot.png';
-import bdoCalc from './images/png/bdo.png';
+import portfolio from './images/png/portfolio.jpg';
+import acmWeb from './images/png/acm-web.jpg';
+import discordBot from './images/png/discord-bot.jpg';
+import bdoCalc from './images/png/bdo.jpg';
 
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
