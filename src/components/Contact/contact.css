@@ -1,30 +1,20 @@
 #contact {
-  form {
+  .contact-form {
     width: 100%;
-    max-width: 46rem;
-    padding: 3rem 2rem;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: var(--default-border-radius);
+    max-width: 35rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-    @media only screen and (--big-mobile) {
-      padding: 3rem;
-    }
-
-    @media only screen and (--tablet) {
-      padding: 3rem 6rem;
-    }
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 400ms;
   }
 
   label {
     width: 100%;
 
     & > p {
-      font-weight: medium;
-      font-size: 1.1rem;
+      font-size: 1.17rem;
       margin-bottom: 0.7rem;
     }
   }
@@ -34,8 +24,8 @@
     padding: 1rem;
     border: none;
     font-size: 1rem;
-    background: #f6f6f6;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     &::placeholder {
       color: var(--light-gray);
