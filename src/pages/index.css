@@ -22,6 +22,8 @@
   font-display: swap;
 }
 
+/* change default font */
+
 @custom-media --tiny-mobile (min-width: 360px);
 @custom-media --mobile      (min-width: 500px);
 @custom-media --big-mobile  (min-width: 615px);
@@ -104,7 +106,7 @@ html {
   
     @media only screen and (--big-mobile) {
       padding: 3rem 4.375rem;
-      margin-bottom: 5rem;
+      margin-bottom: 10rem;
     }
   }
   
@@ -116,7 +118,7 @@ html {
     font-size: 2rem;
     font-family: var(--bold);
     color: var(--accent);
-    margin-bottom: 3rem;
+    margin-bottom: min(8vh, 8rem);
   
     &::after {
       content: '/';

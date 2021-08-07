@@ -3,33 +3,32 @@
     width: 100%;
     max-width: 46rem;
     padding: 3rem 2rem;
-    margin: 0 auto;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: var(--default-border-radius);
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  
+
     @media only screen and (--big-mobile) {
       padding: 3rem;
     }
-  
+
     @media only screen and (--tablet) {
       padding: 3rem 6rem;
     }
   }
-  
+
   label {
     width: 100%;
-  
+
     & > p {
       font-family: var(--medium);
       font-size: 1.1rem;
       margin-bottom: 0.7rem;
     }
   }
-  
+
   input, textarea {
     width: 100%;
     padding: 1rem;
@@ -37,18 +36,18 @@
     font-size: 1rem;
     background: #f6f6f6;
     border-radius: 5px;
-  
+
     &::placeholder {
       color: var(--light-gray);
     }
   }
-  
+
   textarea {
     resize: vertical;
     height: 15rem;
     min-height: 6rem;
   }
-  
+
   input[type=submit] {
     font-family: var(--medium);
     align-self: flex-end;
@@ -61,12 +60,12 @@
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 200ms;
-  
+
     &:hover {
       cursor: pointer;
       background: hsl(243, 52%, 38%);
     }
-  
+
     @media only screen and (--mobile) {
       width: initial;
     }

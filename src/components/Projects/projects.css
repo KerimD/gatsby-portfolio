@@ -2,12 +2,7 @@
   .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
-
-    @media only screen and (--mobile) {
-      padding: 5rem 0;
-      gap: 17rem;
-    }
+    gap: min(40vh, 17rem);
   }
 
   .project {
@@ -119,6 +114,7 @@
   }
 
   .image-link {
+    max-width: 35rem;
     border-radius: var(--default-border-radius);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;

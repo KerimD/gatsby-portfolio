@@ -5,7 +5,7 @@ import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 // import About from '../components/About';
 import Projects from '../components/Projects';
-// import Contact from '../components/Contact';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 import './index.css';
@@ -31,7 +31,7 @@ const HomePage = () =>
       <main>
         <Projects />
         {/* <About /> */}
-        {/* <Contact /> */}
+        <Contact />
       </main>
       <Footer />
     </div>
