@@ -32,7 +32,7 @@
   align-items: center;
 
   & > p {
-    font-family: var(--medium);
+    font-weight: medium;
     font-size: 1.125rem;
     margin-right: 0.75rem;
     white-space: nowrap;

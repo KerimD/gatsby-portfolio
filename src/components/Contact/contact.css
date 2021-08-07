@@ -23,7 +23,7 @@
     width: 100%;
 
     & > p {
-      font-family: var(--medium);
+      font-weight: medium;
       font-size: 1.1rem;
       margin-bottom: 0.7rem;
     }
@@ -49,7 +49,7 @@
   }
 
   input[type=submit] {
-    font-family: var(--medium);
+    font-weight: medium;
     align-self: flex-end;
     width: 100%;
     padding: 1rem 3rem;

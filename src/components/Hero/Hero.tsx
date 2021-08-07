@@ -17,11 +17,6 @@ const Hero = () =>
       </div>
       <HeroLinks />
     </div >
-    <div className="bg-text student">Student</div>
-    <div className="bg-text designer">Designer</div>
-    <div className="bg-text mentor">Mentor</div>
-    <div className="bg-text developer">Developer</div>
-    <div className="bg-text engineer">Engineer</div>
   </div >
 
 export default Hero;

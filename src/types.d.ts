@@ -36,14 +36,4 @@ declare namespace TypesN {
     github: string;
     liveSite: string;
   }
-
-  type User = {
-    name: string;
-    who: string;
-  }
-
-  type Recommendation = {
-    user: User;
-    content: string;
-  }
 }

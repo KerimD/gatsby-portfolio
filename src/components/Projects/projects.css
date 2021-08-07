@@ -48,12 +48,11 @@
       
       & > span {
         color: var(--accent);
-        font-family: var(--medium);
+        font-weight: medium;
       }
     }
 
     & > a {
-      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -138,7 +137,6 @@
       max-width: 35rem;
       max-height: 35rem;
       object-fit: cover;
-      display: block;
       transition: all 200ms;
     }
   }

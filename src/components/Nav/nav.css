@@ -18,11 +18,9 @@
     padding: 0.625rem;
     font-family: var(--crazy-font);
     color: var(--accent);
-    text-decoration: none;
   }
 
   .nav-link-list {
-    list-style-type: none;
     display: flex;
     align-items: center;
 
@@ -35,12 +33,11 @@
     }
 
     & a {
-      text-decoration: none;
       letter-spacing: 0.04em;
       color: var(--dark);
       padding: 0.625rem;
       font-size: 1.25rem;
-      font-family: var(--medium);
+      font-weight: medium;
 
       &:hover {
         text-decoration: underline;
