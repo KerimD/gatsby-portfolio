@@ -14,6 +14,7 @@ const HomePage = () =>
     <Helmet titleTemplate='Deniz Kerim - %s'>
       <title>Personal Computer Science Portfolio</title>
       <html lang='en' />
+      <meta property='robots' content='all' />
       <meta
         name='description'
         content={`

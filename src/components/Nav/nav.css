@@ -37,7 +37,7 @@
       color: var(--dark);
       padding: 0.625rem;
       font-size: 1.25rem;
-      font-weight: medium;
+      font-weight: 500;
 
       &:hover {
         text-decoration: underline;

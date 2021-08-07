@@ -23,6 +23,7 @@
     width: 100%;
     padding: 1rem;
     border: none;
+    /* background: #f1f3f4; */
     font-size: 1rem;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -39,7 +40,7 @@
   }
 
   input[type=submit] {
-    font-weight: medium;
+    font-weight: 500;
     align-self: flex-end;
     width: 100%;
     padding: 1rem 3rem;
