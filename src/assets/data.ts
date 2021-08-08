@@ -38,11 +38,6 @@ export const SOCIALS: TypesN.Social[] = [
 
 export const CONTACTS: TypesN.Social[] = [
   {
-    name: '(636) 253-9503',
-    href: 'tel:6362539503',
-    icon: phone,
-  },
-  {
     name: 'denizkerim@yahoo.com',
     href: 'mailto:denizkerim@yahoo.com',
     icon: email,
@@ -83,33 +78,13 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'discord': { name: 'discord', logo: discord, href: 'https://discord.com/' },
 }
 
-export const PROJECTS: TypesN.Project[] = [
-  {
-    name: 'My Portfolio',
-    date: 'July 2021 - Today',
-    description: `My most recent project, a beautiful portfolio
-    to display and show my experience.`,
-    preview: portfolio,
-    softwareTools: [
-      SKILLS['html'],
-      SKILLS['postcss'],
-      SKILLS['javascript'],
-      SKILLS['typescript'],
-      SKILLS['nodejs'],
-      SKILLS['reactjs'],
-      SKILLS['gatsbyjs'],
-      SKILLS['git'],
-      SKILLS['figma'],
-    ],
-    github: 'https://github.com/KerimD/gatsby-portfolio',
-    liveSite: 'https://github.com/KerimD/gatsby-portfolio',
-  },
+export const EXPERIENCE: TypesN.Work[] = [
   {
     name: 'ACM Web',
     title: 'Chair',
     date: 'Oct 2019 - Today',
-    description: `Conduct scrum meetings, assign issues, and review pull
-      requests to prepare students for a career in cs.`,
+    description: `Host workshops, conduct scrum meetings, and code review to
+      prepare students for a career in CS.`,
     preview: acmWeb,
     softwareTools: [
       SKILLS['html'],
@@ -124,6 +99,29 @@ export const PROJECTS: TypesN.Project[] = [
     ],
     github: 'https://github.com/sigdotcom/mstacm.org',
     liveSite: 'https://mstacm.org/',
+  },
+];
+
+export const PROJECTS: TypesN.Work[] = [
+  {
+    name: 'My Portfolio',
+    date: 'July 2021 - Today',
+    description: `My most recent project, a beautiful portfolio built and hosted
+      using Gatsby.`,
+    preview: portfolio,
+    softwareTools: [
+      SKILLS['html'],
+      SKILLS['postcss'],
+      SKILLS['javascript'],
+      SKILLS['typescript'],
+      SKILLS['nodejs'],
+      SKILLS['reactjs'],
+      SKILLS['gatsbyjs'],
+      SKILLS['git'],
+      SKILLS['figma'],
+    ],
+    github: 'https://github.com/KerimD/gatsby-portfolio',
+    liveSite: 'https://github.com/KerimD/gatsby-portfolio',
   },
   {
     name: 'Discord Battlerite Draft Bot',

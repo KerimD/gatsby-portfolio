@@ -3,7 +3,7 @@
 @custom-media --big-mobile  (min-width: 615px);
 @custom-media --tablet      (min-width: 850px);
 @custom-media --half        (min-width: 959px);
-@custom-media --random      (min-width: 1050px);
+@custom-media --random      (min-width: 1070px);
 @custom-media --wide        (min-width: 1200px);
 @custom-media --super-wide  (min-width: 1300px);
 

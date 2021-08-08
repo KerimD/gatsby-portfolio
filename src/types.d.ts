@@ -26,14 +26,14 @@ declare namespace TypesN {
     href?: string;
   }
 
-  type Project = {
+  type Work = {
     name: string;
     title?: string;
     date: string;
     description: string;
     preview: string;
     softwareTools: Tool[];
-    github: string;
+    github?: string;
     liveSite: string;
   }
 }

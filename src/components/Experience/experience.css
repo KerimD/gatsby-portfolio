@@ -1,5 +1,5 @@
-#projects {
-  .projects-container {
+#experience {
+  .experience-container {
     display: flex;
     flex-direction: column;
     gap: min(40vh, 18rem);

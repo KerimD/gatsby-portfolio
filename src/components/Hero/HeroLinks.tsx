@@ -9,7 +9,7 @@ const HeroLinks = () =>
       <div key={link.name} className='hero-link-wrapper'>
         <a
           href={link.href}
-          target={!link.href.startsWith('tel:') ? '_blank' : '_self'}
+          target={!link.href.startsWith('mailto:') ? '_blank' : '_self'}
           rel='noreferrer'
         >
           <link.icon height='24' />
@@ -18,7 +18,7 @@ const HeroLinks = () =>
           <p>{link.name}</p>
           <a
             href={link.href}
-            target={!link.href.startsWith('tel:') ? '_blank' : '_self'}
+            target={!link.href.startsWith('mailto:') ? '_blank' : '_self'}
             rel='noreferrer'
           >
             <link.icon height='24' />
