@@ -17,7 +17,7 @@ const Work = (work: TypesN.Work) =>
           <Github height='22' />Github
         </a>}
       <div className='tool-logos'>
-        {work.softwareTools.map((tool) =>
+        {work.softwareTools.map((tool) => tool.href ?
           <a
             key={work.name + tool.name}
             href={tool.href}
@@ -25,7 +25,10 @@ const Work = (work: TypesN.Work) =>
             rel='noreferrer'
           >
             <tool.logo />
-          </a>
+          </a> :
+          <div key={work.name + tool.name}>
+            <tool.logo />
+          </div>
         )}
       </div>
     </div>
