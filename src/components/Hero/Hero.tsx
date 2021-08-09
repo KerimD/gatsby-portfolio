@@ -1,18 +1,17 @@
 import React from 'react';
 
-import HeroLinks from "./HeroLinks";
+import HeroLinks from './HeroLinks';
 
 import './hero.css';
 
 const Hero = () =>
-  <div className="hero">
-    <div className="hero-content">
-      <div className="hero-info">
+  <div className='hero'>
+    <div className='hero-content'>
+      <div className='hero-info'>
         <h1>Deniz Kerim</h1>
         <p>
-          I'm a computer science student at MST who
-          is actively looking for an full time
-          position as a software engineer.
+          I'm a Computer Science student at MST who is actively looking for a
+          full time position starting summer of 2022 as a software engineer.
         </p>
       </div>
       <HeroLinks />

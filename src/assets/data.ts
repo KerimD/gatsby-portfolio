@@ -96,7 +96,7 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
 
 export const EDUCATION: TypesN.Work[] = [
   {
-    name: 'Hiperion.io',
+    name: 'Missouri University of Science and Technology',
     date: 'Expected May 2022',
     description: `I go to school here`,
     preview: mst,
@@ -186,7 +186,7 @@ export const PROJECTS: TypesN.Work[] = [
       SKILLS['figma'],
     ],
     github: 'https://github.com/KerimD/gatsby-portfolio',
-    liveSite: 'https://github.com/KerimD/gatsby-portfolio',
+    liveSite: 'https://kerimd.me/',
   },
   {
     name: 'Discord Battlerite Draft Bot',
