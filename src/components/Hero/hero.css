@@ -3,6 +3,7 @@
   height: 100vh;
   max-width: 86.875rem;
   min-height: 35rem;
+  max-height: 1080px;
   position: relative;
   display: flex;
   padding: 0 2rem;

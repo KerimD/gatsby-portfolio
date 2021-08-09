@@ -2,7 +2,7 @@ import React from 'react';
 
 import Work from '../Work';
 
-import './Experience.css';
+import './experience.css';
 import { EXPERIENCE } from '../../assets/data';
 
 const Experience = () =>

@@ -54,8 +54,8 @@ ul, ol {
   list-style: none;
 }
 
-img {
-  display: inline-block;
+img, svg {
+  display: block;
 }
 
 .home-page {
@@ -102,7 +102,7 @@ img {
     font-size: 2rem;
     font-weight: bold;
     color: var(--accent);
-    margin-bottom: min(8vh, 8rem);
+    margin-bottom: min(15vh, 8rem);
   
     &::after {
       content: '/';

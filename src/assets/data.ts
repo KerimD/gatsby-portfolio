@@ -1,11 +1,13 @@
-import portfolio from './images/png/portfolio.jpg';
+import mst from './images/png/mst.jpg';
+import hiperion from './images/png/hiperion.jpg';
+import nisc from './images/png/nisc.jpg';
 import acmWeb from './images/png/acm-web.jpg';
+import portfolio from './images/png/portfolio.jpg';
 import discordBot from './images/png/discord-bot.jpg';
 import bdoCalc from './images/png/bdo.jpg';
 
 import linkedin from './images/svg/linkedin.svg';
 import github from './images/svg/github.svg';
-import phone from './images/svg/phone.svg';
 import email from './images/svg/email.svg';
 
 import html5 from './images/svg/logos/html5.svg';
@@ -16,10 +18,22 @@ import javascript from './images/svg/logos/javascript.svg';
 import typescript from './images/svg/logos/typescript.svg';
 import nodejs from './images/svg/logos/nodejs.svg';
 import reactjs from './images/svg/logos/reactjs.svg';
-import gatsbyjs from './images/svg/logos/gatsbyjs.svg';
 import stripejs from './images/svg/logos/stripejs.svg';
+import gatsbyjs from './images/svg/logos/gatsbyjs.svg';
+import expressjs from './images/svg/logos/expressjs.svg';
+import auth0 from './images/svg/logos/auth0.svg';
+import cpp from './images/svg/logos/cpp.svg';
+import java from './images/svg/logos/java.svg';
 import python from './images/svg/logos/python.svg';
+import dart from './images/svg/logos/dart.svg';
+import bash from './images/svg/logos/bash.svg';
+import springboot from './images/svg/logos/springboot.svg';
+import cassandra from './images/svg/logos/cassandra.svg';
+import firebase from './images/svg/logos/firebase.svg';
+import flutter from './images/svg/logos/flutter.svg';
+import gwt from './images/svg/logos/gwt.svg';
 import git from './images/svg/logos/git.svg';
+import bitbucket from './images/svg/logos/bitbucket.svg';
 import figma from './images/svg/logos/figma.svg';
 import discord from './images/svg/logos/discord.svg';
 
@@ -60,31 +74,82 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'reactjs': { name: 'reactjs', logo: reactjs, href: 'https://reactjs.org/' },
   'stripejs': { name: 'stripejs', logo: stripejs, href: 'https://stripe.com/' },
   'gatsbyjs': { name: 'gatsbyjs', logo: gatsbyjs, href: 'https://www.gatsbyjs.com/' },
-  'expressjs': { name: 'expressjs', logo: html5, href: 'https://expressjs.com/' },
-  'c++': { name: 'c++', logo: html5 },
-  'java': { name: 'java', logo: html5 },
+  'expressjs': { name: 'expressjs', logo: expressjs, href: 'https://expressjs.com/' },
+  'auth0': { name: 'auth0', logo: auth0, href: 'https://auth0.com/' },
+  'c++': { name: 'c++', logo: cpp },
+  'java': { name: 'java', logo: java, href: 'https://www.oracle.com/java/' },
   'python': { name: 'python', logo: python, href: 'https://www.python.org/' },
-  'dart': { name: 'dart', logo: html5 },
-  'bash': { name: 'bash', logo: html5 },
+  'dart': { name: 'dart', logo: dart, href: 'https://dart.dev/' },
   'linux': { name: 'linux', logo: html5 },
-  'springboot': { name: 'springboot', logo: html5 },
-  'cassandra': { name: 'cassandra', logo: html5 },
-  'flutter': { name: 'flutter', logo: html5 },
-  'gwt': { name: 'gwt', logo: html5 },
+  'springboot': { name: 'springboot', logo: springboot, href: 'https://spring.io/projects/spring-boot' },
+  'cassandra': { name: 'cassandra', logo: cassandra, href: 'https://cassandra.apache.org/_/index.html' },
+  'firebase': { name: 'firebase', logo: firebase, href: 'https://firebase.google.com/' },
+  'flutter': { name: 'flutter', logo: flutter, href: 'https://flutter.dev/' },
+  'gwt': { name: 'gwt', logo: gwt, href: 'http://www.gwtproject.org/' },
   'wix': { name: 'wix', logo: html5 },
   'flask': { name: 'flask', logo: html5 },
   'git': { name: 'git', logo: git, href: 'https://git-scm.com/' },
+  'bitbucket': { name: 'bitbucket', logo: bitbucket, href: 'https://bitbucket.org/' },
   'figma': { name: 'figma', logo: figma, href: 'https://www.figma.com/' },
   'discord': { name: 'discord', logo: discord, href: 'https://discord.com/' },
 }
 
+export const EDUCATION: TypesN.Work[] = [
+  {
+    name: 'Hiperion.io',
+    date: 'Expected May 2022',
+    description: `I go to school here`,
+    preview: mst,
+    softwareTools: [
+      SKILLS['c++'],
+      SKILLS['python'],
+      SKILLS['git'],
+    ],
+    liveSite: 'https://www.mst.edu/',
+  },
+];
+
 export const EXPERIENCE: TypesN.Work[] = [
+  {
+    name: 'Hiperion.io',
+    title: 'Full Stack Developer Intern',
+    date: 'June - July 2021',
+    description: `Worked in a team of four to create a Flutter application`,
+    preview: hiperion,
+    softwareTools: [
+      SKILLS['dart'],
+      SKILLS['flutter'],
+      SKILLS['javascript'],
+      SKILLS['nodejs'],
+      SKILLS['expressjs'],
+      SKILLS['firebase'],
+      SKILLS['auth0'],
+      SKILLS['git'],
+    ],
+    liveSite: 'https://hiperion.io/',
+  },
+  {
+    name: 'NISC',
+    title: 'Software Engineer Intern',
+    date: 'May - Aug 2020',
+    description: `Worked on full stack applications`,
+    preview: nisc,
+    softwareTools: [
+      SKILLS['gwt'],
+      SKILLS['java'],
+      SKILLS['springboot'],
+      SKILLS['cassandra'],
+      SKILLS['git'],
+      SKILLS['bitbucket'],
+    ],
+    liveSite: 'https://www.nisc.coop/',
+  },
   {
     name: 'ACM Web',
     title: 'Chair',
-    date: 'Oct 2019 - Today',
+    date: 'Oct 2019 - Present',
     description: `Host workshops, conduct scrum meetings, and code review to
-      prepare students for a career in CS.`,
+      prepare students for a career in CS`,
     preview: acmWeb,
     softwareTools: [
       SKILLS['html'],
@@ -105,9 +170,9 @@ export const EXPERIENCE: TypesN.Work[] = [
 export const PROJECTS: TypesN.Work[] = [
   {
     name: 'My Portfolio',
-    date: 'July 2021 - Today',
+    date: 'July 2021 - Present',
     description: `My most recent project, a beautiful portfolio built and hosted
-      using Gatsby.`,
+      using Gatsby`,
     preview: portfolio,
     softwareTools: [
       SKILLS['html'],
@@ -128,7 +193,7 @@ export const PROJECTS: TypesN.Work[] = [
     date: 'May 2020',
     description: `Devised a solution that organized 1,000s of competitive
       matches for pro players by working with discord’s API to create a Python
-      bot.`,
+      bot`,
     preview: discordBot,
     softwareTools: [
       SKILLS['python'],
@@ -142,7 +207,7 @@ export const PROJECTS: TypesN.Work[] = [
     name: 'BDO Enhancing Calculator',
     date: 'Oct - Dec 2019',
     description: `A statistic calculator that predicts optimal usage of in game
-      currency.`,
+      currency`,
     preview: bdoCalc,
     softwareTools: [
       SKILLS['html'],
