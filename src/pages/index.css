@@ -24,7 +24,7 @@
 }
 
 html {
-  font-family: 'Roboto';
+  font-family: 'Nunito';
   scroll-behavior: smooth;
 }
 
@@ -99,7 +99,9 @@ img, svg {
   }
 
   section > h2 {
-    font-size: max(13vw, 2rem);
+    line-height: 1;
+    word-wrap: break-word;
+    font-size: min(27vw, 11rem);
     font-weight: bold;
     margin-bottom: min(15vh, 8rem);
     color: var(--accent);
@@ -112,12 +114,6 @@ img, svg {
   
     &::after {
       content: '/';
-    }
-  
-    @media only screen and (--tiny-mobile) {
-      & {
-        font-size: min(14vw, 13rem);
-      }
     }
   }
 }

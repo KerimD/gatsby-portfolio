@@ -13,7 +13,7 @@ const createIntersectionObserver = (e: Element | null, transform: string) =>
 
 export const createIntersectionObservers = () => {
   Array.from(document.getElementsByTagName('section')).forEach((e) =>
-    createIntersectionObserver(e.querySelector('h2'), 'translateX(0)'))
+    createIntersectionObserver(e.querySelector('h2'), 'translateX(-0.07em)'))
 
   Array.from(document.getElementsByClassName('work')).forEach((e) =>
     createIntersectionObserver(e, 'translateY(0)'))

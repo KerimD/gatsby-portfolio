@@ -40,7 +40,7 @@
   }
 
   input[type=submit] {
-    font-weight: 500;
+    font-weight: 600;
     align-self: flex-end;
     width: 100%;
     padding: 1rem 3rem;
