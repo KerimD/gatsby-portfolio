@@ -99,10 +99,16 @@ img, svg {
   }
 
   section > h2 {
-    font-size: 2rem;
+    font-size: max(13vw, 2rem);
     font-weight: bold;
-    color: var(--accent);
     margin-bottom: min(15vh, 8rem);
+    color: var(--accent);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 400ms ease-out;
   
     &::after {
       content: '/';
@@ -110,13 +116,7 @@ img, svg {
   
     @media only screen and (--tiny-mobile) {
       & {
-        font-size: 3rem;
-      }
-    }
-  
-    @media only screen and (--tablet) {
-      & {
-        font-size: 4rem;
+        font-size: min(14vw, 13rem);
       }
     }
   }

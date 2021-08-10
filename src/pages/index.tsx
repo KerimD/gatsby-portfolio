@@ -3,29 +3,17 @@ import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
-// import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
 import './index.css';
 import favicon from '../assets/images/favicon.ico';
+import { createIntersectionObservers } from "../helpers/animations";
 
 const HomePage = () => {
-  const animateElement =
-    (element: HTMLElement, observer: IntersectionObserver) => {
-      element.style.opacity = '1';
-      element.style.transform = 'translateY(0)';
-      observer.disconnect();
-    }
-
   useEffect(() => {
-    Array
-      .from(document.getElementsByClassName('work')).forEach((v) =>
-        new IntersectionObserver((entries, observer) =>
-          entries[0].isIntersecting && animateElement(
-            entries[0].target as HTMLElement, observer
-          )).observe(v));
+    createIntersectionObservers();
   }, []);
 
   return (
@@ -48,7 +36,6 @@ const HomePage = () => {
           <Hero />
         </header>
         <main>
-          {/* <Education /> */}
           <Experience />
           <Projects />
         </main>

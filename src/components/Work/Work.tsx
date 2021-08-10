@@ -14,7 +14,7 @@ const Work = (work: TypesN.Work) =>
       <p>{work.description}</p>
       {work.github &&
         <a href={work.github} target='_blank' rel='noreferrer'>
-          <Github height='22' />Github
+          <Github height='22' />View on Github
         </a>}
       <div className='tool-logos'>
         {work.softwareTools.map((tool) => tool.href ?

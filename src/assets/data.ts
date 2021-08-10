@@ -114,7 +114,8 @@ export const EXPERIENCE: TypesN.Work[] = [
     name: 'Hiperion.io',
     title: 'Full Stack Developer Intern',
     date: 'June - July 2021',
-    description: `Worked in a team of four to create a Flutter application`,
+    description: `Worked in a team of 4 on a Flutter application with an
+      Express.js api`,
     preview: hiperion,
     softwareTools: [
       SKILLS['dart'],
@@ -132,7 +133,8 @@ export const EXPERIENCE: TypesN.Work[] = [
     name: 'NISC',
     title: 'Software Engineer Intern',
     date: 'May - Aug 2020',
-    description: `Worked on full stack applications`,
+    description: `Worked on various Spring Boot microservices and a monolithic
+      full stack application`,
     preview: nisc,
     softwareTools: [
       SKILLS['gwt'],
