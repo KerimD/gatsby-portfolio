@@ -36,12 +36,8 @@
 
     & > p {
       font-size: 1.8rem;
+      font-weight: 600;
       margin-bottom: 1.5rem;
-      
-      & > span {
-        color: var(--accent);
-        font-weight: 600;
-      }
     }
 
     & > a {

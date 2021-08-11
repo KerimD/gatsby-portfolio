@@ -58,6 +58,10 @@ img, svg {
   display: block;
 }
 
+button {
+  font-family: 'Nunito';
+}
+
 .home-page {
   position: relative;
   display: flex;

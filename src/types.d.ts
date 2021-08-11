@@ -41,4 +41,9 @@ declare namespace TypesN {
     github?: string;
     liveSite: string;
   }
+
+  type modalProps = {
+    isOpen: boolean;
+    closeModal: () => void;
+  }
 }
