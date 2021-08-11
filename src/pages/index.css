@@ -13,7 +13,7 @@
   --dark: black;
   --light-gray: #9c9c9c;
   --crazy-font: 'Pacifico';
-  --default-border-radius: 1.5rem;
+  --default-border-radius: 10px;
 }
 
 * {
