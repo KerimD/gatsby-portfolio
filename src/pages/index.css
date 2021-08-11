@@ -68,8 +68,6 @@ button {
   flex-direction: column;
   align-items: stretch;
   background: white;
-  background-image: radial-gradient(rgb(210, 210, 210) 1px, transparent 0);
-  background-size: 22px 22px;
 
   header {
     display: flex;

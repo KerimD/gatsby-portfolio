@@ -7,8 +7,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient(rgb(37, 37, 37) 1px, transparent 0);
-  background-size: 22px 22px;
 
   .footer-content-container {
     display: flex;
