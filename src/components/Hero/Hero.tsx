@@ -3,6 +3,7 @@ import React from 'react';
 import HeroLinks from './HeroLinks';
 
 import './hero.css';
+import face from '../../assets/images/png/face.jpg';
 
 const Hero = () =>
   <div className='hero'>
@@ -13,6 +14,7 @@ const Hero = () =>
         full time position starting summer of 2022 as a software engineer
       </p>
     </div>
+    <img src={face} alt='my face' />
     <HeroLinks />
   </div >
 

@@ -12,7 +12,7 @@ const Contact = ({ isOpen, closeModal }: TypesN.modalProps) =>
     onRequestClose={closeModal}
     contentLabel='Contact Modal'
   >
-    <h2>Contact</h2>
+    <h2>Contact Form</h2>
     <form
       action='https://formsubmit.co/ac2a21972221bcc3fa925a93b6c118f3'
       method='POST'

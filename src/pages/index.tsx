@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
-import Experience from '../components/Experience';
-import Projects from '../components/Projects';
+import Works from '../components/Works';
 import Footer from '../components/Footer';
 
 import './index.css';
+import { EXPERIENCE, PROJECTS } from '../assets/data';
 import favicon from '../assets/images/favicon.ico';
 import { createIntersectionObservers } from "../helpers/animations";
 
@@ -37,8 +37,8 @@ const HomePage = () => {
           <Hero />
         </header>
         <main>
-          <Experience />
-          <Projects />
+          <Works category='Experience' works={EXPERIENCE} />
+          <Works category='Projects' works={PROJECTS} />
         </main>
         <Footer />
       </div>

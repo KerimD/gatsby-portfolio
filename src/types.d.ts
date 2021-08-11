@@ -31,6 +31,11 @@ declare namespace TypesN {
     href?: string;
   }
 
+  type WorksProps = {
+    category: string;
+    works: Work[];
+  }
+
   type Work = {
     name: string;
     title?: string;
