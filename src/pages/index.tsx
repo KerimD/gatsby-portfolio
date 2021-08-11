@@ -29,6 +29,7 @@ const HomePage = () => {
             projects and skills.
           `}
         />
+        <meta name='referrer' content='origin' />
       </Helmet>
       <div className='home-page'>
         <header>
