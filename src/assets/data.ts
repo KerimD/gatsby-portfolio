@@ -135,8 +135,8 @@ export const EXPERIENCE: TypesN.Work[] = [
     name: 'ACM Web',
     title: 'Chair',
     date: 'Oct 2019 - Present',
-    description: `Host workshops, conduct scrum meetings, and code review to
-      prepare students for a career in CS`,
+    description: `Teach students highly desirable skills in Software Engineering
+      while maintaining the Missouri S&T ACM Website, mstacm.org.`,
     preview: acmWeb,
     softwareTools: [
       SKILLS['html'],
