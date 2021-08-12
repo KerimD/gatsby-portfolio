@@ -94,28 +94,13 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'discord': { name: 'discord', logo: discord, href: 'https://discord.com/' },
 }
 
-export const EDUCATION: TypesN.Work[] = [
-  {
-    name: 'Missouri University of Science and Technology',
-    date: 'Expected May 2022',
-    description: `I go to school here`,
-    preview: mst,
-    softwareTools: [
-      SKILLS['c++'],
-      SKILLS['python'],
-      SKILLS['git'],
-    ],
-    liveSite: 'https://www.mst.edu/',
-  },
-];
-
 export const EXPERIENCE: TypesN.Work[] = [
   {
     name: 'Hiperion.io',
     title: 'Full Stack Developer Intern',
     date: 'June - July 2021',
     description: `Worked in a team of 4 on a Flutter application with an
-      Express.js api`,
+      Express.js API`,
     preview: hiperion,
     softwareTools: [
       SKILLS['dart'],
@@ -173,8 +158,8 @@ export const PROJECTS: TypesN.Work[] = [
   {
     name: 'My Portfolio',
     date: 'July 2021 - Present',
-    description: `My most recent project, a beautiful portfolio built and hosted
-      using Gatsby`,
+    description: `My most recent project, a beautiful portfolio designed using
+      Figma, built using Gatsby.js, and hosted using Gatsby Cloud.`,
     preview: portfolio,
     softwareTools: [
       SKILLS['html'],
@@ -193,7 +178,7 @@ export const PROJECTS: TypesN.Work[] = [
   {
     name: 'Discord Battlerite Draft Bot',
     date: 'May 2020',
-    description: `Devised a solution that organized 1,000s of competitive
+    description: `Devised a solution that organized over 1,000 competitive
       matches for pro players by working with discord’s API to create a Python
       bot`,
     preview: discordBot,

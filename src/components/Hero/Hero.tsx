@@ -16,6 +16,6 @@ const Hero = () =>
     </div>
     <img src={face} alt='my face' />
     <HeroLinks />
-  </div >
+  </div>
 
 export default Hero;
