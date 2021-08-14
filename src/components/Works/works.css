@@ -125,7 +125,7 @@
 
   .image-link {
     width: 100%;
-    max-width: 36.375rem;
+    max-width: 33.25rem;
     border-radius: var(--default-border-radius);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
@@ -139,7 +139,7 @@
       & > img {
         transform: scale(1.04);
         transition: transform 1400ms ease-out;
-    }
+      }
     }
 
     & > img {

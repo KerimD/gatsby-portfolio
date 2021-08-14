@@ -3,18 +3,17 @@ import React from 'react';
 import HeroLinks from './HeroLinks';
 
 import './hero.css';
-import face from '../../assets/images/png/face.jpg';
 
 const Hero = () =>
   <div className='hero'>
     <div className='hero-info'>
       <h1>Deniz Kerim</h1>
       <p>
+        Welcome!,<br />
         I'm a Computer Science student at MST who is actively looking for a
-        full time position starting summer of 2022 as a software engineer
+        full time position starting summer of 2022 as a Software Engineer
       </p>
     </div>
-    <img src={face} alt='my face' />
     <HeroLinks />
   </div>
 

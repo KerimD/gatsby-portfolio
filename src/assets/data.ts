@@ -99,7 +99,7 @@ export const EXPERIENCE: TypesN.Work[] = [
     name: 'Hiperion.io',
     title: 'Full Stack Developer Intern',
     date: 'June - July 2021',
-    description: `Worked in a team of 4 on a Flutter application with an
+    description: `Worked in a team of 5 on a Flutter application with an
       Express.js API`,
     preview: hiperion,
     softwareTools: [
@@ -132,11 +132,11 @@ export const EXPERIENCE: TypesN.Work[] = [
     liveSite: 'https://www.nisc.coop/',
   },
   {
-    name: 'ACM Web',
+    name: 'Missouri S&T ACM Web',
     title: 'Chair',
     date: 'Oct 2019 - Present',
-    description: `Teach students highly desirable skills in Software Engineering
-      while maintaining the Missouri S&T ACM Website, mstacm.org.`,
+    description: `Teach 8+ students highly desirable skills in the software
+      industry while maintaining the Missouri S&T ACM Website`,
     preview: acmWeb,
     softwareTools: [
       SKILLS['html'],

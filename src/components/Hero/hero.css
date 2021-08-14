@@ -28,13 +28,11 @@
     
     & > h1 {
       font-size: max(22vw, 2rem);
-      font-weight: 400;
       line-height: 0.9;
       letter-spacing: 0.04em;
       max-width: 6ch;
       margin-block: 0;
       margin-bottom: 3rem;
-      font-family: var(--crazy-font);
       color: #222222;
       transform: translateX(-0.03em);
     }
