@@ -55,7 +55,7 @@
       color: white;
       background: var(--accent);
       padding: 0.5rem 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.7rem;
       border-radius: 6px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       transition: all 200ms;
@@ -82,7 +82,7 @@
       }
 
       & > a {
-        margin-bottom: 2rem;
+        margin-bottom: 2.4rem;
       }
     }
 
@@ -118,6 +118,7 @@
       transition: all 200ms;
 
       &:hover {
+        transform: scale(1.1);
         filter: grayscale(0);
       }
     }

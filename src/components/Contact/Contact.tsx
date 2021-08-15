@@ -17,7 +17,8 @@ const Contact = ({ isOpen, closeModal }: TypesN.modalProps) =>
       action='https://formsubmit.co/ac2a21972221bcc3fa925a93b6c118f3'
       method='POST'
     >
-      <input type="text" name="_honey" style={{ display: 'none' }} />
+      <input type='text' name='_honey' style={{ display: 'none' }} />
+      <input type='hidden' name='_next' value='http://localhost:8000/#footer' />
       <label>
         <p>Your Email</p>
         <input

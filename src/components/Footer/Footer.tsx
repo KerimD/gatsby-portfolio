@@ -9,7 +9,7 @@ const Hero = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   return (
-    <footer>
+    <footer id='footer'>
       <div className='footer-content-container'>
         <ul>
           <li key='socials'><h3>SOCIALS</h3></li>
