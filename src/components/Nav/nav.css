@@ -5,15 +5,20 @@
   height: 3.75rem;
   padding: 0 4.375rem;
   align-items: center;
-  justify-content: space-between;
   margin-top: 1rem;
+  gap: 1.625rem;
 
   @media only screen and (--tablet) {
     display: flex;
   }
 
+  @media only screen and (--half) {
+    gap: 2.625rem;
+  }
+
   .nav-logo {
     max-width: 8rem;
+    margin-right: auto;
   }
 
   .nav-link-list {
@@ -30,7 +35,7 @@
 
     & a {
       letter-spacing: 0.04em;
-      color: var(--dark);
+      color: var(--color);
       padding: 0.625rem;
       font-size: 1.25rem;
       font-weight: 600;
@@ -48,6 +53,20 @@
       & > li {
         margin-right: 2rem;
       }
+    }
+  }
+
+  .dark-theme-toggle {
+    cursor: pointer;
+    width: 30px;
+    display: block;
+
+    & > svg {
+      fill: var(--color);
+    }
+
+    & > input {
+      display: none;
     }
   }
 }

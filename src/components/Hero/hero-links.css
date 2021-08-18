@@ -12,6 +12,10 @@
   position: relative;
   padding: 0.5rem 0.75rem;
 
+  & > a > svg {
+    fill: var(--color);
+  }
+
   @media only screen and (--tablet) {
     &:hover .hover-link {
       display: flex;

@@ -33,7 +33,6 @@
       max-width: 6ch;
       margin-block: 0;
       margin-bottom: 3rem;
-      color: #222222;
       transform: translateX(-0.03em);
     }
 
@@ -42,6 +41,7 @@
       font-weight: 600;
       letter-spacing: 0.045em;
       max-width: 30ch;
+      transition: all 400ms ease-out 0ms;
     }
 
     @media only screen and (--mobile) {

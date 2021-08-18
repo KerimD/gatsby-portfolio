@@ -8,12 +8,20 @@
 @custom-media --super-wide  (min-width: 1300px);
 
 :root {
+  --color: #1a202c;
+  --background: white;
+  --contact-background: rgba(255, 255, 255, 0.75);
   --accent: #605bcb;
-  --secondary: #ffd700;
-  --dark: black;
   --light-gray: #9c9c9c;
-  --crazy-font: 'Pacifico';
   --default-border-radius: 10px;
+  --box-shadow-color: rgba(0, 0, 0, 0.24);
+}
+
+:root[theme='dark'] {
+  --color: white;
+  --background: #1a202c;
+  --contact-background: rgba(99, 99, 99, 0.75);
+  --box-shadow-color: rgba(77, 77, 77, 0.24);
 }
 
 * {
@@ -33,13 +41,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: white;
+  background-color: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: darkgray;
   border-radius: 999px;
-  border: 3px solid white;
+  border: 3px solid var(--background);
 
   &:hover {
     background-color: rgb(110, 110, 110);
@@ -62,12 +70,20 @@ button {
   font-family: 'Nunito';
 }
 
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: all 400ms ease-out 0ms !important;
+}
+
 .home-page {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background: white;
+  background: var(--background);
+  color: var(--color);
 
   header {
     display: flex;
@@ -109,7 +125,7 @@ button {
     color: var(--accent);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: var(--color);
     opacity: 0;
     transform: translateX(200px);
     transition: all 400ms ease-out;
