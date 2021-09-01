@@ -18,7 +18,7 @@ const Contact = ({ isOpen, closeModal }: TypesN.modalProps) =>
       method='POST'
     >
       <input type='text' name='_honey' style={{ display: 'none' }} />
-      <input type='hidden' name='_next' value='http://localhost:8000/#footer' />
+      <input type='hidden' name='_next' value='https://kerimd.me/#footer' />
       <label>
         <p>Your Email</p>
         <input

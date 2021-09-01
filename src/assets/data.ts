@@ -119,7 +119,7 @@ export const EXPERIENCE: TypesN.Work[] = [
     title: 'Software Engineer Intern',
     date: 'May - Aug 2020',
     description: `Worked on various Spring Boot microservices and a monolithic
-      full stack application`,
+      full stack Java application`,
     preview: nisc,
     softwareTools: [
       SKILLS['gwt'],
