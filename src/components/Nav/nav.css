@@ -1,12 +1,12 @@
 .nav {
   display: none;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 86.875rem;
   height: 3.75rem;
   padding: 0 4.375rem;
-  align-items: center;
   margin-top: 1rem;
-  gap: 1.625rem;
 
   @media only screen and (--tablet) {
     display: flex;
@@ -14,11 +14,6 @@
 
   @media only screen and (--half) {
     gap: 2.625rem;
-  }
-
-  .nav-logo {
-    max-width: 8rem;
-    margin-right: auto;
   }
 
   .nav-link-list {

@@ -27,7 +27,7 @@
     margin: auto 0;
     
     & > h1 {
-      font-size: max(22vw, 2rem);
+      font-size: clamp(2rem, 22vw, 7rem);
       line-height: 0.9;
       letter-spacing: 0.04em;
       max-width: 6ch;
@@ -37,44 +37,16 @@
     }
 
     & > p {
-      font-size: max(4vw, 14px);
+      font-size: clamp(14px, 4vw, 1.5rem);
       font-weight: 600;
       letter-spacing: 0.045em;
       max-width: 30ch;
       transition: all 400ms ease-out 0ms;
     }
 
-    @media only screen and (--mobile) {
-      & > h1 {
-        font-size: 7rem;
-      }
-
-      & > p {
-        font-size: 1.5rem;
-      }
-    }
-
     @media only screen and (--tablet) {
       padding-bottom: 0;
       margin: 0;
-
-      & > h1 {
-        font-size: 5rem;
-      }
-
-      & > p {
-        font-size: 1.25rem;
-      }
-    }
-
-    @media only screen and (--half) {
-      & > h1 {
-        font-size: 5rem;
-      }
-
-      & > p {
-        font-size: 1.4rem;
-      }
     }
   }
 
