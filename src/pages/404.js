@@ -1,11 +1,9 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 
-import './404.css';
-
-const NotFoundPage = () =>
-  <div className='page-404'>
-    <span>404 Not Found</span>
-    <a href='/'>Go Home!</a>
-  </div>
+const NotFoundPage = () => {
+  useEffect(() => navigate('/', { replace: true }), [])
+  return null
+}
 
 export default NotFoundPage
