@@ -1,4 +1,4 @@
-import mst from './images/png/mst.jpg';
+// import mst from './images/png/mst.jpg';
 import hiperion from './images/png/hiperion.jpg';
 import nisc from './images/png/nisc.jpg';
 import acmWeb from './images/png/acm-web.jpg';

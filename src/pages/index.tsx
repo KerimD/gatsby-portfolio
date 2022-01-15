@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import './index.css';
 import { EXPERIENCE, PROJECTS } from '../assets/data';
 import favicon from '../assets/images/favicon.ico';
+import portfolio from '../assets/images/png/portfolio.jpg';
 import { createIntersectionObservers } from "../helpers/animations";
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
         <html lang='en' />
         <link rel='icon' href={favicon} />
         <title>Personal Computer Science Portfolio</title>
+        <meta property='og:image' content={portfolio} />
         <meta
           name='description'
           content={`

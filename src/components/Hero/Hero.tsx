@@ -9,9 +9,8 @@ const Hero = () =>
     <div className='hero-info'>
       <h1>Deniz Kerim</h1>
       <p>
-        Welcome!,<br />
-        I'm a Computer Science student at MST who is actively looking for a
-        full time position starting summer of 2022 as a Software Engineer
+        Welcome!<br />
+        {`I'm a Computer Science student at Missouri University of Science & Technology`}
       </p>
     </div>
     <HeroLinks />

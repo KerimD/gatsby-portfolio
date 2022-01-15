@@ -25,7 +25,7 @@ const Hero = () => {
           <li><button onClick={() => setIsOpen(true)}>Contact Form</button></li>
         </ul>
       </div>
-      <div className='copywrite'>© 2021 Deniz Kerim</div>
+      <div className='copywrite'>© 2022 Deniz Kerim</div>
       <Contact isOpen={modalIsOpen} closeModal={() => setIsOpen(false)} />
     </footer>
   );
