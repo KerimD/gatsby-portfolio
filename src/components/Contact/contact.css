@@ -96,7 +96,7 @@
     }
   }
 
-  @media only screen and (--mobile) {
+  @media only screen and (min-width: 500px) {
     padding: 2rem 3rem;
     margin: 0 1rem;
 

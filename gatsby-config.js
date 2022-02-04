@@ -7,7 +7,6 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('autoprefixer'),
-          require('postcss-custom-media'),
           require('postcss-nested'),
         ],
       },

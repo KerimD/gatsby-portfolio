@@ -18,7 +18,7 @@
       border-color: #f8f8f8;
     }
 
-    @media only screen and (--half) {
+    @media only screen and (min-width: 959px) {
       justify-content: space-between;
       flex-direction: row;
     }
@@ -69,7 +69,7 @@
       }
     }
 
-    @media only screen and (--half) {
+    @media only screen and (min-width: 959px) {
       max-width: 40%;
 
       & > time {
@@ -86,13 +86,13 @@
       }
     }
 
-    @media only screen and (--random) {
+    @media only screen and (min-width: 1070px) {
       & > p {
         font-size: 2rem;
       }
     }
 
-    @media only screen and (--super-wide) {
+    @media only screen and (min-width: 1300px) {
       max-width: 50ch;
 
       & > p {

@@ -8,11 +8,11 @@
   padding: 0 4.375rem;
   margin-top: 1rem;
 
-  @media only screen and (--tablet) {
+  @media only screen and (min-width: 850px) {
     display: flex;
   }
 
-  @media only screen and (--half) {
+  @media only screen and (min-width: 959px) {
     gap: 2.625rem;
   }
 
@@ -44,7 +44,7 @@
       }
     }
 
-    @media only screen and (--half) {
+    @media only screen and (min-width: 959px) {
       & > li {
         margin-right: 2rem;
       }
