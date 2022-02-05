@@ -3,9 +3,8 @@ import React, { useState } from 'react';
 import Contact from '../Contact';
 
 import './footer.css';
-import { SOCIALS, CONTACTS } from '../../assets/data';
 
-const Hero = () => {
+const Hero = ({ contacts, socials }: TypesN.FooterProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,7 +12,7 @@ const Hero = () => {
       <div className='footer-content-container'>
         <ul>
           <li key='socials'><h3>SOCIALS</h3></li>
-          {SOCIALS.map((e) => e.href
+          {socials.map((e) => e.href
             ? <li key={e.name}><a href={e.href} target='_blank' rel='noreferrer'>
               {e.name}
             </a></li>
@@ -21,7 +20,7 @@ const Hero = () => {
         </ul>
         <ul>
           <li><h3>CONTACT ME</h3></li>
-          <li>{CONTACTS[0].name}</li>
+          {contacts.map((e) => <li key={e.name}>{e.name}</li>)}
           <li><button onClick={() => setIsOpen(true)}>Contact Form</button></li>
         </ul>
       </div>

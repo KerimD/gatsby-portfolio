@@ -3715,7 +3715,7 @@ export type ContentfulContentTypeSortInput = {
   order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
 };
 
-export type ContactQueryVariables = Exact<{ [key: string]: never; }>;
+export type ContentfulQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ContactQuery = { allContentfulContact: { edges: Array<{ node: { href?: string | null, name?: string | null, icon?: { file?: { url?: string | null, fileName?: string | null } | null } | null } }> } };
+export type ContentfulQuery = { allContentfulContact: { edges: Array<{ node: { href?: string | null, name?: string | null, icon?: { file?: { url?: string | null, fileName?: string | null } | null } | null } }> }, allContentfulSocial: { edges: Array<{ node: { href?: string | null, name?: string | null, icon?: { file?: { fileName?: string | null, url?: string | null } | null } | null } }> } };

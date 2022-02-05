@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -13,19 +13,20 @@ module.exports = {
         accessToken: process.env.ACCESS_TOKEN,
       },
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-typescript',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-graphql-codegen`,
     {
-      resolve: 'gatsby-plugin-postcss',
+      resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require('autoprefixer'),
-          require('postcss-nested'),
+          require(`autoprefixer`),
+          require(`postcss-nested`),
         ],
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
           include: /svg/,

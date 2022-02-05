@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { graphql, PageProps } from 'gatsby';
+import { ContentfulQuery } from '../../graphql-types';
 import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
@@ -12,10 +14,46 @@ import favicon from '../assets/images/favicon.ico';
 import portfolio from '../assets/images/png/portfolio.jpg';
 import { createIntersectionObservers } from "../helpers/animations";
 
-const HomePage = () => {
+export const query = graphql`
+  query Contentful {
+    allContentfulContact {
+      edges {
+        node {
+          href
+          name
+          icon {
+            file {
+              url
+              fileName
+            }
+          }
+        }
+      }
+    }
+    allContentfulSocial {
+      edges {
+        node {
+          href
+          name
+          icon {
+            file {
+              fileName
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const HomePage = ({ data }: PageProps<ContentfulQuery>) => {
   useEffect(() => {
     createIntersectionObservers();
   }, []);
+
+  const contacts = data.allContentfulContact.edges;
+  const socials = data.allContentfulSocial.edges;
 
   return (
     <>
@@ -42,7 +80,10 @@ const HomePage = () => {
           <Works category='Experience' works={EXPERIENCE} />
           <Works category='Projects' works={PROJECTS} />
         </main>
-        <Footer />
+        <Footer
+          contacts={contacts.map((e) => e.node)}
+          socials={socials.map((e) => e.node)}
+        />
       </div>
     </>
   );

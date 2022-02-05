@@ -5,7 +5,7 @@ import './contact.css';
 
 Modal.setAppElement('#___gatsby');
 
-const Contact = ({ isOpen, closeModal }: TypesN.modalProps) =>
+const Contact = ({ isOpen, closeModal }: TypesN.ModalProps) =>
   <Modal
     className='contact-modal'
     isOpen={isOpen}

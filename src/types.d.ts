@@ -19,6 +19,8 @@ declare module '*.ico' {
 }
 
 declare namespace TypesN {
+  import { ContentfulContentType } from '../graphql-types';
+
   type Social = {
     name: string;
     href: string;
@@ -47,8 +49,13 @@ declare namespace TypesN {
     liveSite: string;
   }
 
-  type modalProps = {
+  type ModalProps = {
     isOpen: boolean;
     closeModal: () => void;
+  }
+
+  type FooterProps = {
+    contacts: Array<ContentfulContentType>;
+    socials: Array<ContentfulContentType>;
   }
 }
