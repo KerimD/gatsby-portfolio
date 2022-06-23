@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { graphql, PageProps } from 'gatsby';
-import { ContentfulQuery } from '../../graphql-types';
 import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
@@ -14,40 +13,7 @@ import favicon from '../assets/images/favicon.ico';
 import portfolio from '../assets/images/png/portfolio.jpg';
 import { createIntersectionObservers } from "../helpers/animations";
 
-export const query = graphql`
-  query Contentful {
-    allContentfulContact {
-      edges {
-        node {
-          href
-          name
-          icon {
-            file {
-              url
-              fileName
-            }
-          }
-        }
-      }
-    }
-    allContentfulSocial {
-      edges {
-        node {
-          href
-          name
-          icon {
-            file {
-              fileName
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
-const HomePage = ({ data }: PageProps<ContentfulQuery>) => {
+const HomePage = ({ data }: PageProps<Queries.ContentfulQuery>) => {
   useEffect(() => {
     createIntersectionObservers();
   }, []);
@@ -90,3 +56,36 @@ const HomePage = ({ data }: PageProps<ContentfulQuery>) => {
 }
 
 export default HomePage
+
+export const query = graphql`
+  query Contentful {
+    allContentfulContact {
+      edges {
+        node {
+          href
+          name
+          icon {
+            file {
+              url
+              fileName
+            }
+          }
+        }
+      }
+    }
+    allContentfulSocial {
+      edges {
+        node {
+          href
+          name
+          icon {
+            file {
+              fileName
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`

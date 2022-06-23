@@ -3,6 +3,7 @@ require('dotenv').config({
 })
 
 module.exports = {
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -15,7 +16,6 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-graphql-codegen`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
