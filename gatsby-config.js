@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-inline-svg`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

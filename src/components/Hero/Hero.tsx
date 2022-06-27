@@ -4,7 +4,7 @@ import HeroLinks from './HeroLinks';
 
 import './hero.css';
 
-const Hero = () =>
+const Hero = ({ links }: TypesN.LinksProps) =>
   <div className='hero'>
     <div className='hero-info'>
       <h1>Deniz Kerim</h1>
@@ -13,7 +13,7 @@ const Hero = () =>
         {`I'm a Computer Science student at Missouri University of Science & Technology`}
       </p>
     </div>
-    <HeroLinks />
+    <HeroLinks links={links} />
   </div>
 
 export default Hero;

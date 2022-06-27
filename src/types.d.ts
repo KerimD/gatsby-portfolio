@@ -19,8 +19,6 @@ declare module '*.ico' {
 }
 
 declare namespace TypesN {
-  import { ContentfulContentType } from '../graphql-types';
-
   type Social = {
     name: string;
     href: string;
@@ -54,8 +52,17 @@ declare namespace TypesN {
     closeModal: () => void;
   }
 
+  type LinkType = ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }>;
+
+  type LinksProps = {
+    links: LinkType;
+    // links: ReadonlyArray<Queries.ContentfulSocial | Queries.ContentfulContact>;
+  }
+
   type FooterProps = {
-    contacts: Array<ContentfulContentType>;
-    socials: Array<ContentfulContentType>;
+    contacts: LinkType;
+    socials: LinkType;
+    // contacts: ReadonlyArray<Queries.ContentfulContact>;
+    // socials: ReadonlyArray<Queries.ContentfulSocial>;
   }
 }

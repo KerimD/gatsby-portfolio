@@ -12,6 +12,10 @@
   position: relative;
   padding: 0.5rem 0.75rem;
 
+  svg {
+    height: 24px;
+  }
+
   & > a > svg {
     fill: var(--color);
   }

@@ -57,6 +57,7 @@ type ContentfulAsset = ContentfulReference & Node & RemoteFile & {
   readonly resize: Maybe<RemoteFileResize>;
   readonly size: Maybe<Scalars['Int']>;
   readonly spaceId: Maybe<Scalars['String']>;
+  readonly svg: Maybe<InlineSvg>;
   readonly sys: Maybe<ContentfulAssetSys>;
   readonly title: Maybe<Scalars['String']>;
   readonly updatedAt: Maybe<Scalars['Date']>;
@@ -1901,6 +1902,7 @@ type File = Node & {
   readonly root: Scalars['String'];
   readonly size: Scalars['Int'];
   readonly sourceInstanceName: Scalars['String'];
+  readonly svg: Maybe<InlineSvg>;
   readonly uid: Scalars['Int'];
 };
 
@@ -2257,6 +2259,14 @@ type ImageResizingBehavior =
   | 'scale'
   /** When used in association with the f parameter below, creates a thumbnail from the image based on a focus area. */
   | 'thumb';
+
+type InlineSvg = {
+  readonly absolutePath: Maybe<Scalars['String']>;
+  readonly content: Maybe<Scalars['String']>;
+  readonly dataURI: Maybe<Scalars['String']>;
+  readonly originalContent: Maybe<Scalars['String']>;
+  readonly relativePath: Maybe<Scalars['String']>;
+};
 
 type IntQueryOperatorInput = {
   readonly eq: InputMaybe<Scalars['Int']>;
@@ -3928,10 +3938,10 @@ type StringQueryOperatorInput = {
   readonly regex: InputMaybe<Scalars['String']>;
 };
 
-type ContentfulQueryVariables = Exact<{ [key: string]: never; }>;
+type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type ContentfulQuery = { readonly allContentfulContact: { readonly edges: ReadonlyArray<{ readonly node: { readonly href: string | null, readonly name: string | null, readonly icon: { readonly file: { readonly url: string | null, readonly fileName: string | null } | null } | null } }> }, readonly allContentfulSocial: { readonly edges: ReadonlyArray<{ readonly node: { readonly href: string | null, readonly name: string | null, readonly icon: { readonly file: { readonly fileName: string | null, readonly url: string | null } | null } | null } }> } };
+type HomePageQuery = { readonly allContentfulContact: { readonly nodes: ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }> }, readonly allContentfulSocial: { readonly nodes: ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }> } };
 
 
 }

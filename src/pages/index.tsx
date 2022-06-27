@@ -13,13 +13,13 @@ import favicon from '../assets/images/favicon.ico';
 import portfolio from '../assets/images/png/portfolio.jpg';
 import { createIntersectionObservers } from "../helpers/animations";
 
-const HomePage = ({ data }: PageProps<Queries.ContentfulQuery>) => {
+const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
   useEffect(() => {
     createIntersectionObservers();
   }, []);
 
-  const contacts = data.allContentfulContact.edges;
-  const socials = data.allContentfulSocial.edges;
+  const contacts = data.allContentfulContact.nodes;
+  const socials = data.allContentfulSocial.nodes;
 
   return (
     <>
@@ -40,16 +40,13 @@ const HomePage = ({ data }: PageProps<Queries.ContentfulQuery>) => {
       <div className='home-page'>
         <header>
           <Nav />
-          <Hero />
+          <Hero links={contacts.concat(socials)} />
         </header>
         <main>
           <Works category='Experience' works={EXPERIENCE} />
           <Works category='Projects' works={PROJECTS} />
         </main>
-        <Footer
-          contacts={contacts.map((e) => e.node)}
-          socials={socials.map((e) => e.node)}
-        />
+        <Footer contacts={contacts} socials={socials} />
       </div>
     </>
   );
@@ -58,31 +55,25 @@ const HomePage = ({ data }: PageProps<Queries.ContentfulQuery>) => {
 export default HomePage
 
 export const query = graphql`
-  query Contentful {
+  query HomePage {
     allContentfulContact {
-      edges {
-        node {
-          href
-          name
-          icon {
-            file {
-              url
-              fileName
-            }
+      nodes {
+        name
+        href
+        icon {
+          svg {
+            content
           }
         }
       }
     }
     allContentfulSocial {
-      edges {
-        node {
-          href
-          name
-          icon {
-            file {
-              fileName
-              url
-            }
+      nodes {
+        name
+        href
+        icon {
+          svg {
+            content
           }
         }
       }
