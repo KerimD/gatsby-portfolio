@@ -1169,6 +1169,345 @@ type ContentfulImageCropFocus =
   | 'top_left'
   | 'top_right';
 
+type ContentfulLink = ContentfulEntry & ContentfulReference & Node & {
+  readonly children: ReadonlyArray<Node>;
+  readonly contentful_id: Scalars['String'];
+  readonly createdAt: Maybe<Scalars['Date']>;
+  readonly href: Maybe<Scalars['String']>;
+  readonly icon: Maybe<ContentfulAsset>;
+  readonly id: Scalars['ID'];
+  readonly internal: Internal;
+  readonly isEmail: Maybe<Scalars['Boolean']>;
+  readonly name: Maybe<Scalars['String']>;
+  readonly node_locale: Scalars['String'];
+  readonly parent: Maybe<Node>;
+  readonly spaceId: Maybe<Scalars['String']>;
+  readonly sys: Maybe<ContentfulLinkSys>;
+  readonly updatedAt: Maybe<Scalars['Date']>;
+};
+
+
+type ContentfulLink_createdAtArgs = {
+  difference: InputMaybe<Scalars['String']>;
+  formatString: InputMaybe<Scalars['String']>;
+  fromNow: InputMaybe<Scalars['Boolean']>;
+  locale: InputMaybe<Scalars['String']>;
+};
+
+
+type ContentfulLink_updatedAtArgs = {
+  difference: InputMaybe<Scalars['String']>;
+  formatString: InputMaybe<Scalars['String']>;
+  fromNow: InputMaybe<Scalars['Boolean']>;
+  locale: InputMaybe<Scalars['String']>;
+};
+
+type ContentfulLinkConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<ContentfulLinkEdge>;
+  readonly group: ReadonlyArray<ContentfulLinkGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<ContentfulLink>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type ContentfulLinkConnection_distinctArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkConnection_groupArgs = {
+  field: ContentfulLinkFieldsEnum;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type ContentfulLinkConnection_maxArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkConnection_minArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkConnection_sumArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+type ContentfulLinkEdge = {
+  readonly next: Maybe<ContentfulLink>;
+  readonly node: ContentfulLink;
+  readonly previous: Maybe<ContentfulLink>;
+};
+
+type ContentfulLinkFieldsEnum =
+  | 'children'
+  | 'children.children'
+  | 'children.children.children'
+  | 'children.children.children.children'
+  | 'children.children.children.id'
+  | 'children.children.id'
+  | 'children.children.internal.content'
+  | 'children.children.internal.contentDigest'
+  | 'children.children.internal.description'
+  | 'children.children.internal.fieldOwners'
+  | 'children.children.internal.ignoreType'
+  | 'children.children.internal.mediaType'
+  | 'children.children.internal.owner'
+  | 'children.children.internal.type'
+  | 'children.children.parent.children'
+  | 'children.children.parent.id'
+  | 'children.id'
+  | 'children.internal.content'
+  | 'children.internal.contentDigest'
+  | 'children.internal.description'
+  | 'children.internal.fieldOwners'
+  | 'children.internal.ignoreType'
+  | 'children.internal.mediaType'
+  | 'children.internal.owner'
+  | 'children.internal.type'
+  | 'children.parent.children'
+  | 'children.parent.children.children'
+  | 'children.parent.children.id'
+  | 'children.parent.id'
+  | 'children.parent.internal.content'
+  | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.description'
+  | 'children.parent.internal.fieldOwners'
+  | 'children.parent.internal.ignoreType'
+  | 'children.parent.internal.mediaType'
+  | 'children.parent.internal.owner'
+  | 'children.parent.internal.type'
+  | 'children.parent.parent.children'
+  | 'children.parent.parent.id'
+  | 'contentful_id'
+  | 'createdAt'
+  | 'href'
+  | 'icon.children'
+  | 'icon.children.children'
+  | 'icon.children.children.children'
+  | 'icon.children.children.id'
+  | 'icon.children.id'
+  | 'icon.children.internal.content'
+  | 'icon.children.internal.contentDigest'
+  | 'icon.children.internal.description'
+  | 'icon.children.internal.fieldOwners'
+  | 'icon.children.internal.ignoreType'
+  | 'icon.children.internal.mediaType'
+  | 'icon.children.internal.owner'
+  | 'icon.children.internal.type'
+  | 'icon.children.parent.children'
+  | 'icon.children.parent.id'
+  | 'icon.contentful_id'
+  | 'icon.createdAt'
+  | 'icon.description'
+  | 'icon.file.contentType'
+  | 'icon.file.details.size'
+  | 'icon.file.fileName'
+  | 'icon.file.url'
+  | 'icon.filename'
+  | 'icon.filesize'
+  | 'icon.gatsbyImage'
+  | 'icon.gatsbyImageData'
+  | 'icon.height'
+  | 'icon.id'
+  | 'icon.internal.content'
+  | 'icon.internal.contentDigest'
+  | 'icon.internal.description'
+  | 'icon.internal.fieldOwners'
+  | 'icon.internal.ignoreType'
+  | 'icon.internal.mediaType'
+  | 'icon.internal.owner'
+  | 'icon.internal.type'
+  | 'icon.mimeType'
+  | 'icon.node_locale'
+  | 'icon.parent.children'
+  | 'icon.parent.children.children'
+  | 'icon.parent.children.id'
+  | 'icon.parent.id'
+  | 'icon.parent.internal.content'
+  | 'icon.parent.internal.contentDigest'
+  | 'icon.parent.internal.description'
+  | 'icon.parent.internal.fieldOwners'
+  | 'icon.parent.internal.ignoreType'
+  | 'icon.parent.internal.mediaType'
+  | 'icon.parent.internal.owner'
+  | 'icon.parent.internal.type'
+  | 'icon.parent.parent.children'
+  | 'icon.parent.parent.id'
+  | 'icon.placeholderUrl'
+  | 'icon.publicUrl'
+  | 'icon.resize.height'
+  | 'icon.resize.src'
+  | 'icon.resize.width'
+  | 'icon.size'
+  | 'icon.spaceId'
+  | 'icon.sys.revision'
+  | 'icon.sys.type'
+  | 'icon.title'
+  | 'icon.updatedAt'
+  | 'icon.url'
+  | 'icon.width'
+  | 'id'
+  | 'internal.content'
+  | 'internal.contentDigest'
+  | 'internal.description'
+  | 'internal.fieldOwners'
+  | 'internal.ignoreType'
+  | 'internal.mediaType'
+  | 'internal.owner'
+  | 'internal.type'
+  | 'isEmail'
+  | 'name'
+  | 'node_locale'
+  | 'parent.children'
+  | 'parent.children.children'
+  | 'parent.children.children.children'
+  | 'parent.children.children.id'
+  | 'parent.children.id'
+  | 'parent.children.internal.content'
+  | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.description'
+  | 'parent.children.internal.fieldOwners'
+  | 'parent.children.internal.ignoreType'
+  | 'parent.children.internal.mediaType'
+  | 'parent.children.internal.owner'
+  | 'parent.children.internal.type'
+  | 'parent.children.parent.children'
+  | 'parent.children.parent.id'
+  | 'parent.id'
+  | 'parent.internal.content'
+  | 'parent.internal.contentDigest'
+  | 'parent.internal.description'
+  | 'parent.internal.fieldOwners'
+  | 'parent.internal.ignoreType'
+  | 'parent.internal.mediaType'
+  | 'parent.internal.owner'
+  | 'parent.internal.type'
+  | 'parent.parent.children'
+  | 'parent.parent.children.children'
+  | 'parent.parent.children.id'
+  | 'parent.parent.id'
+  | 'parent.parent.internal.content'
+  | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.description'
+  | 'parent.parent.internal.fieldOwners'
+  | 'parent.parent.internal.ignoreType'
+  | 'parent.parent.internal.mediaType'
+  | 'parent.parent.internal.owner'
+  | 'parent.parent.internal.type'
+  | 'parent.parent.parent.children'
+  | 'parent.parent.parent.id'
+  | 'spaceId'
+  | 'sys.contentType.sys.id'
+  | 'sys.contentType.sys.linkType'
+  | 'sys.contentType.sys.type'
+  | 'sys.revision'
+  | 'sys.type'
+  | 'updatedAt';
+
+type ContentfulLinkFilterInput = {
+  readonly children: InputMaybe<NodeFilterListInput>;
+  readonly contentful_id: InputMaybe<StringQueryOperatorInput>;
+  readonly createdAt: InputMaybe<DateQueryOperatorInput>;
+  readonly href: InputMaybe<StringQueryOperatorInput>;
+  readonly icon: InputMaybe<ContentfulAssetFilterInput>;
+  readonly id: InputMaybe<StringQueryOperatorInput>;
+  readonly internal: InputMaybe<InternalFilterInput>;
+  readonly isEmail: InputMaybe<BooleanQueryOperatorInput>;
+  readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly node_locale: InputMaybe<StringQueryOperatorInput>;
+  readonly parent: InputMaybe<NodeFilterInput>;
+  readonly spaceId: InputMaybe<StringQueryOperatorInput>;
+  readonly sys: InputMaybe<ContentfulLinkSysFilterInput>;
+  readonly updatedAt: InputMaybe<DateQueryOperatorInput>;
+};
+
+type ContentfulLinkGroupConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<ContentfulLinkEdge>;
+  readonly field: Scalars['String'];
+  readonly fieldValue: Maybe<Scalars['String']>;
+  readonly group: ReadonlyArray<ContentfulLinkGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<ContentfulLink>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type ContentfulLinkGroupConnection_distinctArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkGroupConnection_groupArgs = {
+  field: ContentfulLinkFieldsEnum;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type ContentfulLinkGroupConnection_maxArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkGroupConnection_minArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+
+type ContentfulLinkGroupConnection_sumArgs = {
+  field: ContentfulLinkFieldsEnum;
+};
+
+type ContentfulLinkSortInput = {
+  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<ContentfulLinkFieldsEnum>>>;
+  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+};
+
+type ContentfulLinkSys = {
+  readonly contentType: Maybe<ContentfulLinkSysContentType>;
+  readonly revision: Maybe<Scalars['Int']>;
+  readonly type: Maybe<Scalars['String']>;
+};
+
+type ContentfulLinkSysContentType = {
+  readonly sys: Maybe<ContentfulLinkSysContentTypeSys>;
+};
+
+type ContentfulLinkSysContentTypeFilterInput = {
+  readonly sys: InputMaybe<ContentfulLinkSysContentTypeSysFilterInput>;
+};
+
+type ContentfulLinkSysContentTypeSys = {
+  readonly id: Maybe<Scalars['String']>;
+  readonly linkType: Maybe<Scalars['String']>;
+  readonly type: Maybe<Scalars['String']>;
+};
+
+type ContentfulLinkSysContentTypeSysFilterInput = {
+  readonly id: InputMaybe<StringQueryOperatorInput>;
+  readonly linkType: InputMaybe<StringQueryOperatorInput>;
+  readonly type: InputMaybe<StringQueryOperatorInput>;
+};
+
+type ContentfulLinkSysFilterInput = {
+  readonly contentType: InputMaybe<ContentfulLinkSysContentTypeFilterInput>;
+  readonly revision: InputMaybe<IntQueryOperatorInput>;
+  readonly type: InputMaybe<StringQueryOperatorInput>;
+};
+
 type ContentfulReference = {
   readonly contentful_id: Scalars['String'];
   readonly id: Scalars['ID'];
@@ -2344,6 +2683,7 @@ type Query = {
   readonly allContentfulContact: ContentfulContactConnection;
   readonly allContentfulContentType: ContentfulContentTypeConnection;
   readonly allContentfulEntry: ContentfulEntryConnection;
+  readonly allContentfulLink: ContentfulLinkConnection;
   readonly allContentfulSocial: ContentfulSocialConnection;
   readonly allDirectory: DirectoryConnection;
   readonly allFile: FileConnection;
@@ -2356,6 +2696,7 @@ type Query = {
   readonly contentfulContact: Maybe<ContentfulContact>;
   readonly contentfulContentType: Maybe<ContentfulContentType>;
   readonly contentfulEntry: Maybe<ContentfulEntry>;
+  readonly contentfulLink: Maybe<ContentfulLink>;
   readonly contentfulSocial: Maybe<ContentfulSocial>;
   readonly directory: Maybe<Directory>;
   readonly file: Maybe<File>;
@@ -2396,6 +2737,14 @@ type Query_allContentfulEntryArgs = {
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
   sort: InputMaybe<ContentfulEntrySortInput>;
+};
+
+
+type Query_allContentfulLinkArgs = {
+  filter: InputMaybe<ContentfulLinkFilterInput>;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+  sort: InputMaybe<ContentfulLinkSortInput>;
 };
 
 
@@ -2528,6 +2877,24 @@ type Query_contentfulEntryArgs = {
   internal: InputMaybe<InternalFilterInput>;
   node_locale: InputMaybe<StringQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
+};
+
+
+type Query_contentfulLinkArgs = {
+  children: InputMaybe<NodeFilterListInput>;
+  contentful_id: InputMaybe<StringQueryOperatorInput>;
+  createdAt: InputMaybe<DateQueryOperatorInput>;
+  href: InputMaybe<StringQueryOperatorInput>;
+  icon: InputMaybe<ContentfulAssetFilterInput>;
+  id: InputMaybe<StringQueryOperatorInput>;
+  internal: InputMaybe<InternalFilterInput>;
+  isEmail: InputMaybe<BooleanQueryOperatorInput>;
+  name: InputMaybe<StringQueryOperatorInput>;
+  node_locale: InputMaybe<StringQueryOperatorInput>;
+  parent: InputMaybe<NodeFilterInput>;
+  spaceId: InputMaybe<StringQueryOperatorInput>;
+  sys: InputMaybe<ContentfulLinkSysFilterInput>;
+  updatedAt: InputMaybe<DateQueryOperatorInput>;
 };
 
 

@@ -2,23 +2,27 @@ import React from 'react';
 
 import './hero-links.css';
 
+// FIXME: when you hover the row moves slightly down for some reason
+// FIXME: remove null checks when typegen stops trolling
+
 const HeroLinks = ({ links }: TypesN.Links) =>
   <div className='hero-links'>
-    {links.map((link) => {  // remove checks when I add default values
-      const aTag = <a
-        href={link.href || undefined}
-        target={!link.href?.startsWith('mailto:') ? '_blank' : '_self'}
-        rel='noreferrer'
-      >
-        {link.icon?.svg?.content && <div dangerouslySetInnerHTML={{ __html: link.icon.svg.content }} />}
-      </a>
+    {links.map((link) => {
+      const icon = link.icon?.svg?.content
+        && <div dangerouslySetInnerHTML={{ __html: link.icon.svg.content }} />
       
       return (
-        <div key={link.name}/*change to link.id*/ className='hero-link-wrapper'>
-          {aTag}
+        <div key={link.name}/* FIXME: change key to link.id */ className='hero-link-wrapper'>
+          {icon}
           <div className='hover-link'>
             <p>{link.name}</p>
-            {aTag}
+            <a
+              href={link.href || undefined}
+              target={!link.href?.startsWith('mailto:') ? '_blank' : '_self'}
+              rel='noreferrer'
+            >
+              {icon}
+            </a>
           </div>
         </div>
       );
