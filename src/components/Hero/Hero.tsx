@@ -4,7 +4,7 @@ import HeroLinks from './HeroLinks';
 
 import './hero.css';
 
-const Hero = ({ links }: TypesN.LinksProps) =>
+const Hero = ({ links }: TypesN.Links) =>
   <div className='hero'>
     <div className='hero-info'>
       <h1>Deniz Kerim</h1>

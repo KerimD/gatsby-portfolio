@@ -54,7 +54,7 @@ declare namespace TypesN {
 
   type LinkType = ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }>;
 
-  type LinksProps = {
+  type Links = {
     links: LinkType;
     // links: ReadonlyArray<Queries.ContentfulSocial | Queries.ContentfulContact>;
   }

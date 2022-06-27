@@ -40,7 +40,7 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
       <div className='home-page'>
         <header>
           <Nav />
-          <Hero links={contacts.concat(socials)} />
+          <Hero links={[...contacts, ...socials]} />
         </header>
         <main>
           <Works category='Experience' works={EXPERIENCE} />

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './hero-links.css';
 
-const HeroLinks = ({ links }: TypesN.LinksProps) =>
+const HeroLinks = ({ links }: TypesN.Links) =>
   <div className='hero-links'>
     {links.map((link) => {  // remove checks when I add default values
       const aTag = <a
