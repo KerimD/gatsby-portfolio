@@ -18,8 +18,13 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
     createIntersectionObservers();
   }, []);
 
-  const contacts = data.allContentfulContact.nodes;
-  const socials = data.allContentfulSocial.nodes;
+  let socials: TypesN.LinkNodes = [], email: TypesN.LinkNode = null;
+  data.allContentfulLink.nodes.forEach((e) => {
+    if (e.isEmail) email = e;
+    else socials.push(e);
+  })
+  let links = [...socials];
+  if (email) links.push(email);
 
   return (
     <>
@@ -40,13 +45,13 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
       <div className='home-page'>
         <header>
           <Nav />
-          <Hero links={[...contacts, ...socials]} />
+          <Hero links={links} />
         </header>
         <main>
           <Works category='Experience' works={EXPERIENCE} />
           <Works category='Projects' works={PROJECTS} />
         </main>
-        <Footer contacts={contacts} socials={socials} />
+        <Footer socials={socials} email={email} />
       </div>
     </>
   );
@@ -56,21 +61,12 @@ export default HomePage
 
 export const query = graphql`
   query HomePage {
-    allContentfulContact {
+    allContentfulLink {
       nodes {
-        name
+        id
         href
-        icon {
-          svg {
-            content
-          }
-        }
-      }
-    }
-    allContentfulSocial {
-      nodes {
         name
-        href
+        isEmail
         icon {
           svg {
             content

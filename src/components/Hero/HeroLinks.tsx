@@ -12,7 +12,7 @@ const HeroLinks = ({ links }: TypesN.Links) =>
         && <div dangerouslySetInnerHTML={{ __html: link.icon.svg.content }} />
       
       return (
-        <div key={link.name}/* FIXME: change key to link.id */ className='hero-link-wrapper'>
+        <div key={link.id} className='hero-link-wrapper'>
           {icon}
           <div className='hover-link'>
             <p>{link.name}</p>

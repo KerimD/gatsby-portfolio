@@ -4308,7 +4308,7 @@ type StringQueryOperatorInput = {
 type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type HomePageQuery = { readonly allContentfulContact: { readonly nodes: ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }> }, readonly allContentfulSocial: { readonly nodes: ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }> } };
+type HomePageQuery = { readonly allContentfulLink: { readonly nodes: ReadonlyArray<{ readonly id: string, readonly href: string | null, readonly name: string | null, readonly isEmail: boolean | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }> } };
 
 
 }

@@ -7,7 +7,7 @@ import './footer.css';
 // FIXME: remove null checks when typegen stops trolling
 // FIXME: replace contacts with just email
 
-const Footer = ({ contacts, socials }: TypesN.FooterProps) => {
+const Footer = ({ socials, email }: TypesN.FooterProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ const Footer = ({ contacts, socials }: TypesN.FooterProps) => {
         </ul>
         <ul>
           <li><h3>CONTACT ME</h3></li>
-          {contacts.map((e) => <li key={e.name}>{e.name}</li>) /* FIXME: change key to e.id */}
+          {email && <li key={email.id}>{email.name}</li>}
           <li><button onClick={() => setIsOpen(true)}>Contact Form</button></li>
         </ul>
       </div>

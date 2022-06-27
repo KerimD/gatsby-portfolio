@@ -33,7 +33,7 @@ declare namespace TypesN {
 
   type WorksProps = {
     category: string;
-    works: Work[];
+    works: Array<Work>;
   }
 
   type Work = {
@@ -42,7 +42,7 @@ declare namespace TypesN {
     date: string;
     description: string;
     preview: string;
-    softwareTools: Tool[];
+    softwareTools: Array<Tool>;
     github?: string;
     liveSite: string;
   }
@@ -52,17 +52,18 @@ declare namespace TypesN {
     closeModal: () => void;
   }
 
-  type LinkType = ReadonlyArray<{ readonly name: string | null, readonly href: string | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null }>;
+  type LinkNod = { readonly id: string, readonly href: string | null, readonly name: string | null, readonly isEmail: boolean | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null };
+
+  type LinkNode = LinkNod | null;
+
+  type LinkNodes = Array<LinkNod>;
 
   type Links = {
-    links: LinkType;
-    // links: ReadonlyArray<Queries.ContentfulSocial | Queries.ContentfulContact>;
+    links: LinkNodes;
   }
 
   type FooterProps = {
-    contacts: LinkType;
-    socials: LinkType;
-    // contacts: ReadonlyArray<Queries.ContentfulContact>;
-    // socials: ReadonlyArray<Queries.ContentfulSocial>;
+    socials: LinkNodes;
+    email: LinkNode;
   }
 }
