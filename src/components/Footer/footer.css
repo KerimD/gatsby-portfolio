@@ -1,7 +1,7 @@
 footer {
   padding: 2rem 2rem 1rem;
   background: black;
-  color: var(--light-gray);
+  color: #dbdbdb;
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,6 @@ footer {
       align-items: center;
 
       & > h3 {
-        color: #dbdbdb;
         letter-spacing: 1.4px;
         margin-bottom: 0.6em;
         margin: 0 2rem;
@@ -40,7 +39,7 @@ footer {
           margin: 0 2rem;
           
           & > a {
-            color: var(--light-gray);
+            color: #dbdbdb;
     
             &:hover {
               text-decoration: underline;
@@ -86,5 +85,6 @@ footer {
   .copywrite {
     margin-top: 2rem;
     font-size: 12px;
+    color: var(--light-gray);
   }
 }

@@ -114,10 +114,10 @@ button {
     font-size: min(27vw, 11rem);
     font-weight: bold;
     margin-bottom: min(15vh, 8rem);
-    color: var(--accent);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--color);
+    color: var(--color);
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: var(--color); */
     opacity: 0;
     transition: opacity var(--transition-time) ease-in;
   

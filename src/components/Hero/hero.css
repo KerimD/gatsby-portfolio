@@ -42,6 +42,14 @@
       letter-spacing: 0.045em;
       max-width: 30ch;
       transition: all 400ms ease-out 0ms;
+
+      & > a {
+        color: black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     @media only screen and (min-width: 850px) {
