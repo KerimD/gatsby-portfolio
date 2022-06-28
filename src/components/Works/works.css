@@ -11,8 +11,10 @@
     align-items: flex-start;
     gap: 4rem;
     opacity: 0;
-    transform: translateY(200px);
-    transition: all 400ms ease-out;
+    transform: translateY(100px);
+    transition: 
+      opacity 600ms ease-in,
+      transform var(--transition-time) ease-out;
 
     &:first-child .image-link {
       border-color: #f8f8f8;

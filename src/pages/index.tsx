@@ -14,9 +14,7 @@ import portfolio from '../assets/images/png/portfolio.jpg';
 import { createIntersectionObservers } from "../helpers/animations";
 
 const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
-  useEffect(() => {
-    createIntersectionObservers();
-  }, []);
+  useEffect(() => { createIntersectionObservers(); }, []);
 
   return (
     <>

@@ -6,6 +6,7 @@
   --light-gray: #9c9c9c;
   --default-border-radius: 10px;
   --box-shadow-color: rgba(0, 0, 0, 0.24);
+  --transition-time: 400ms;
 }
 
 :root[theme='dark'] {
@@ -118,8 +119,7 @@ button {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--color);
     opacity: 0;
-    transform: translateX(200px);
-    transition: all 400ms ease-out;
+    transition: opacity var(--transition-time) ease-in;
   
     &::after {
       content: '/';
