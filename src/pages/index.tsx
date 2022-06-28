@@ -18,14 +18,6 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
     createIntersectionObservers();
   }, []);
 
-  let socials: TypesN.LinkNodes = [], email: TypesN.LinkNode = null;
-  data.allContentfulLink.nodes.forEach((e) => {
-    if (e.isEmail) email = e;
-    else socials.push(e);
-  })
-  let links = [...socials];
-  if (email) links.push(email);
-
   return (
     <>
       <Helmet titleTemplate='Deniz Kerim - %s'>
@@ -45,13 +37,13 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
       <div className='home-page'>
         <header>
           <Nav />
-          <Hero links={links} />
+          <Hero links={data.allContentfulLink.nodes} />
         </header>
         <main>
           <Works category='Experience' works={EXPERIENCE} />
           <Works category='Projects' works={PROJECTS} />
         </main>
-        <Footer socials={socials} email={email} />
+        <Footer links={data.allContentfulLink.nodes} />
       </div>
     </>
   );

@@ -18,7 +18,7 @@ const HeroLinks = ({ links }: TypesN.Links) =>
             <p>{link.name}</p>
             <a
               href={link.href || undefined}
-              target={!link.href?.startsWith('mailto:') ? '_blank' : '_self'}
+              target={link.isEmail ? '_self' : '_blank'}
               rel='noreferrer'
             >
               {icon}
@@ -26,8 +26,7 @@ const HeroLinks = ({ links }: TypesN.Links) =>
           </div>
         </div>
       );
-    }
-    )}
+    })}
   </div>
 
 export default HeroLinks;

@@ -5,10 +5,11 @@ import Contact from '../Contact';
 import './footer.css';
 
 // FIXME: remove null checks when typegen stops trolling
-// FIXME: replace contacts with just email
 
-const Footer = ({ socials, email }: TypesN.FooterProps) => {
+const Footer = ({ links }: TypesN.Links) => {
   const [modalIsOpen, setIsOpen] = useState(false);
+
+  const email: TypesN.LinkNode | undefined = links.filter((e) => e.isEmail).pop();
 
   return (
     <footer id='footer'>
@@ -16,7 +17,7 @@ const Footer = ({ socials, email }: TypesN.FooterProps) => {
         <div>
           <h3>SOCIALS</h3>
           <ul>
-            {socials.map((e) =>
+            {links.map((e) => !e.isEmail &&
               <li key={e.name}>
                 <a href={e.href || undefined} target='_blank' rel='noreferrer'>
                   {e.name}
@@ -27,7 +28,7 @@ const Footer = ({ socials, email }: TypesN.FooterProps) => {
         <div>
           <h3>CONTACT ME</h3>
           <ul>
-            {email && <li key={email.id}>{email.name}</li>}
+            {email && <li>{email.name}</li>}
             <li><button onClick={() => setIsOpen(true)}>Contact Form</button></li>
           </ul>
         </div>

@@ -52,18 +52,9 @@ declare namespace TypesN {
     closeModal: () => void;
   }
 
-  type LinkNod = { readonly id: string, readonly href: string | null, readonly name: string | null, readonly isEmail: boolean | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null };
+  type LinkNode = { readonly id: string, readonly href: string | null, readonly name: string | null, readonly isEmail: boolean | null, readonly icon: { readonly svg: { readonly content: string | null } | null } | null };
 
-  type LinkNode = LinkNod | null;
+  type LinkNodes = ReadonlyArray<LinkNode>;
 
-  type LinkNodes = Array<LinkNod>;
-
-  type Links = {
-    links: LinkNodes;
-  }
-
-  type FooterProps = {
-    socials: LinkNodes;
-    email: LinkNode;
-  }
+  type Links = { links: LinkNodes; }
 }

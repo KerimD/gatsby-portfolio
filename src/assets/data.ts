@@ -31,6 +31,7 @@ import gwt from './images/svg/logos/gwt.svg';
 import git from './images/svg/logos/git.svg';
 import bitbucket from './images/svg/logos/bitbucket.svg';
 import figma from './images/svg/logos/figma.svg';
+import contentful from './images/svg/logos/contentful.svg';
 import discord from './images/svg/logos/discord.svg';
 
 export const SKILLS: { [key: string]: TypesN.Tool } = {
@@ -61,6 +62,7 @@ export const SKILLS: { [key: string]: TypesN.Tool } = {
   'git': { name: 'git', logo: git, href: 'https://git-scm.com/' },
   'bitbucket': { name: 'bitbucket', logo: bitbucket, href: 'https://bitbucket.org/' },
   'figma': { name: 'figma', logo: figma, href: 'https://www.figma.com/' },
+  'contentful': { name: 'contentful', logo: contentful, href: 'https://www.contentful.com/' },
   'discord': { name: 'discord', logo: discord, href: 'https://discord.com/' },
 }
 
@@ -141,6 +143,7 @@ export const PROJECTS: TypesN.Work[] = [
       SKILLS['gatsbyjs'],
       SKILLS['git'],
       SKILLS['figma'],
+      SKILLS['contentful'],
     ],
     github: 'https://github.com/KerimD/gatsby-portfolio',
     liveSite: 'https://kerimd.me/',
