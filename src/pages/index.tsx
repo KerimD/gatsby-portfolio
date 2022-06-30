@@ -21,7 +21,7 @@ const HomePage = ({ data }: PageProps<Queries.HomePageQuery>) => {
       <Helmet titleTemplate='Deniz Kerim - %s'>
         <html lang='en' />
         <link rel='icon' href={favicon} />
-        <title>Personal Computer Science Portfolio</title>
+        <title>Computer Science Portfolio</title>
         <meta property='og:image' content={portfolio} />
         <meta
           name='description'
