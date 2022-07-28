@@ -1,8 +1,10 @@
+import type { GatsbyConfig } from "gatsby";
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-module.exports = {
+const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
@@ -36,3 +38,5 @@ module.exports = {
     },
   ],
 };
+
+export default config
