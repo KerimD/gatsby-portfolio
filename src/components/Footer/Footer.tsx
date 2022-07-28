@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
-import Contact from '../Contact';
-
 import './footer.css';
+import Contact from '../Contact';
 
 // FIXME: remove null checks when typegen stops trolling
 
-const Footer = ({ links }: TypesN.Links) => {
+export default ({ links }: TypesN.Links) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const email: TypesN.LinkNode | undefined = links.filter((e) => e.isEmail).pop();
@@ -38,5 +37,3 @@ const Footer = ({ links }: TypesN.Links) => {
     </footer>
   );
 }
-
-export default Footer;

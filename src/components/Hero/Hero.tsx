@@ -3,7 +3,7 @@ import React from 'react';
 import './hero.css';
 import HeroLinks from './HeroLinks';
 
-const Hero = ({ links }: TypesN.Links) =>
+export default ({ links }: TypesN.Links) =>
   <div className='hero'>
     <div className='hero-info'>
       <h1>Deniz Kerim</h1>
@@ -22,5 +22,3 @@ const Hero = ({ links }: TypesN.Links) =>
     </div>
     <HeroLinks links={links} />
   </div>
-
-export default Hero;

@@ -5,7 +5,7 @@ import './contact.css';
 
 Modal.setAppElement('#___gatsby');
 
-const Contact = ({ isOpen, closeModal }: TypesN.ModalProps) =>
+export default ({ isOpen, closeModal }: TypesN.ModalProps) =>
   <Modal
     className='contact-modal'
     isOpen={isOpen}
@@ -51,5 +51,3 @@ const Contact = ({ isOpen, closeModal }: TypesN.ModalProps) =>
       </div>
     </form>
   </Modal>
-
-export default Contact

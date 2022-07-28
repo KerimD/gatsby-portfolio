@@ -5,7 +5,7 @@ import './hero-links.css';
 // FIXME: when you hover the row moves slightly down for some reason
 // FIXME: remove null checks when typegen stops trolling
 
-const HeroLinks = ({ links }: TypesN.Links) =>
+export default ({ links }: TypesN.Links) =>
   <div className='hero-links'>
     {links.map((link) => {
       const icon = link.icon?.svg?.content
@@ -28,5 +28,3 @@ const HeroLinks = ({ links }: TypesN.Links) =>
       );
     })}
   </div>
-
-export default HeroLinks;

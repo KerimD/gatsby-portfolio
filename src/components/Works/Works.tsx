@@ -3,7 +3,7 @@ import React from 'react';
 import './works.css';
 import Github from '../../assets/images/svg/github.svg';
 
-const Works = ({ category, works }: TypesN.WorksProps) =>
+export default ({ category, works }: TypesN.WorksProps) =>
   <section className='works' id={category.toLowerCase()}>
     <h2>{category}</h2>
     <div className='works-container'>
@@ -48,5 +48,3 @@ const Works = ({ category, works }: TypesN.WorksProps) =>
       )}
     </div>
   </section>
-
-export default Works;

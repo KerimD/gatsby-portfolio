@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import './nav.css';
 import Moon from '../../assets/images/svg/moon.svg';
 
-const Nav = () => {
+export default () => {
   const setTheme = (theme: string) => {
     document.documentElement.classList.add('theme-transition');
     window.setTimeout(() => {
@@ -37,5 +37,3 @@ const Nav = () => {
     </nav>
   );
 }
-
-export default Nav
