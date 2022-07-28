@@ -12,7 +12,7 @@ const createIntersectionObserver = (e: Element, transform?: string) =>
   new IntersectionObserver((entries, observer) =>
     entries[0].isIntersecting && animateElement(
       entries[0].target as HTMLElement, observer, transform
-    ), { threshold: 0.3 }).observe(e);
+    ), { threshold: 0.2 }).observe(e);
 
 export const createIntersectionObservers = () => {
   Array.from(document.getElementsByTagName('section')).forEach((e) => {

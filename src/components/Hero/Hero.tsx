@@ -1,8 +1,7 @@
 import React from 'react';
 
-import HeroLinks from './HeroLinks';
-
 import './hero.css';
+import HeroLinks from './HeroLinks';
 
 const Hero = ({ links }: TypesN.Links) =>
   <div className='hero'>

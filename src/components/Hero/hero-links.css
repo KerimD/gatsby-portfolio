@@ -16,7 +16,7 @@
     height: 24px;
   }
 
-  & > a > svg {
+  & > div > svg {
     fill: var(--color);
   }
 

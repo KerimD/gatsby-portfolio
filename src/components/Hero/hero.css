@@ -44,7 +44,7 @@
       transition: all 400ms ease-out 0ms;
 
       & > a {
-        color: black;
+        color: var(--color);
 
         &:hover {
           text-decoration: underline;
